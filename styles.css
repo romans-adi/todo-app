@@ -1,0 +1,22 @@
+/* COMMON STYLE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Inter";
+  font-style: normal;
+  line-height: inherit;
+}
+
+.blue {
+  color: #172b4d;
+}
+
+.green {
+  color: #36b37e;
+}
