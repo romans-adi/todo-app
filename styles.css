@@ -208,3 +208,32 @@ body {
 .social-icon i:hover {
   color: #36b37e;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+  .headline {
+    margin-top: -50%;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .bars {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+
+  .header {
+    background: none;
+  }
+
+  main {
+    background: url(/header-bg.png) no-repeat top center;
+    background-size: contain;
+  }
+}
