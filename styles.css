@@ -89,3 +89,47 @@ body {
     transform: rotate(45deg);
     background: #36b37e;
   }
+
+  /* HEADER */
+
+.header {
+  background: url(/header-bg.png) no-repeat top center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* HEADLINE */
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.headline-heading {
+  font-weight: 700;
+  font-size: clamp(1.8rem, 4vw, 2.1rem);
+  line-height: 130%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.supporting-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  line-height: 160%;
+  text-align: justify;
+  max-width: 330px;
+}
