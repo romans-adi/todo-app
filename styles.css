@@ -8,7 +8,7 @@
 
 body {
   background-color: white;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   line-height: inherit;
 }
@@ -27,70 +27,69 @@ body {
   position: absolute;
   width: 100%;
   min-height: 44px;
-  top: 0px;
-  }
+  top: 0;
+}
 
-  .top-navigation {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 2%;
-    min-height: 92px;
-    background: transparent;
-  }
+.top-navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2%;
+  min-height: 92px;
+  background: transparent;
+}
 
-  .burger {
-    display: flex;
-    flex-direction: column;
-    padding: 3% 10%;
-    min-height: 50px;
-  }
+.burger {
+  display: flex;
+  flex-direction: column;
+  padding: 3% 10%;
+  min-height: 50px;
+}
 
-  .burger-lines {
-    display: block;
-    height: 1.5rem;
-    width: 2rem;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.burger-lines {
+  height: 1.5rem;
+  width: 2rem;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .burger-line {
-    display: block;
-    height: 2px;
-    width: 100%;
-    border-radius: 10px;
-    background: #0e2431;
-  }
+.burger-line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
 
-  #toggle {
-    display: none;
-  }
+#toggle {
+  display: none;
+}
 
-  .burger:hover .burger-line {
-    background-color: #36b37e;
-    cursor: pointer;
-  }
+.burger:hover .burger-line {
+  background-color: #36b37e;
+  cursor: pointer;
+}
 
-  #toggle:checked+.burger .line-0 {
-    transform: rotate(-45deg);
-    background: #36b37e;
-  }
+#toggle:checked + .burger .line-0 {
+  transform: rotate(-45deg);
+  background: #36b37e;
+}
 
-  #toggle:checked+.burger .line-1 {
-    transform: rotate(-45deg);
-    opacity: 0%;
-  }
+#toggle:checked + .burger .line-1 {
+  transform: rotate(-45deg);
+  opacity: 0%;
+}
 
-  #toggle:checked+.burger .line-2 {
-    transform: rotate(45deg);
-    background: #36b37e;
-  }
+#toggle:checked + .burger .line-2 {
+  transform: rotate(45deg);
+  background: #36b37e;
+}
 
-  /* HEADER */
+/* HEADER */
 
 .header {
   background: url(/header-bg.png) no-repeat top center;
@@ -201,7 +200,7 @@ body {
 
 .chevron-down:hover {
   background-color: #36b37e;
-  color: #FFFFFF;
+  color: #fff;
   cursor: pointer;
 }
 
