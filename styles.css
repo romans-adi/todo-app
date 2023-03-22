@@ -20,3 +20,72 @@ body {
 .green {
   color: #36b37e;
 }
+
+/* TOP NAVIGATION */
+
+.bars {
+  position: absolute;
+  width: 100%;
+  min-height: 44px;
+  top: 0px;
+  }
+
+  .top-navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+    min-height: 92px;
+    background: transparent;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 10%;
+    min-height: 50px;
+  }
+
+  .burger-lines {
+    display: block;
+    height: 1.5rem;
+    width: 2rem;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .burger-line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  .burger:hover .burger-line {
+    background-color: #36b37e;
+    cursor: pointer;
+  }
+
+  #toggle:checked+.burger .line-0 {
+    transform: rotate(-45deg);
+    background: #36b37e;
+  }
+
+  #toggle:checked+.burger .line-1 {
+    transform: rotate(-45deg);
+    opacity: 0%;
+  }
+
+  #toggle:checked+.burger .line-2 {
+    transform: rotate(45deg);
+    background: #36b37e;
+  }
