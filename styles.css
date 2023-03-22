@@ -210,13 +210,13 @@ body {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 200px) and (max-width: 400px) {
+@media only screen and (min-width: 200px) and (max-width: 375px) {
   .headline {
     margin-top: -50%;
   }
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 375px) {
   .bars {
     display: none;
   }
