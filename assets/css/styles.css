@@ -162,11 +162,10 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   max-width: 80%;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin-top: 30%;
   padding: 10px;
 }
 
@@ -494,12 +493,6 @@ body {
   .about-myself-illustration-right,
   .about-myself-illustration-left {
     opacity: 30%;
-  }
-}
-
-@media only screen and (min-width: 200px) and (max-width: 375px) {
-  .headline {
-    margin-top: -50%;
   }
 }
 
