@@ -279,7 +279,6 @@ body {
 .project-card {
   display: grid;
   grid-template-rows: 60% 20% 20%;
-  align-items: stretch;
   margin: 3% 0;
   height: 474px;
   max-width: 327px;
@@ -519,7 +518,8 @@ body {
     display: none;
   }
 
-  .projects-set {
+  .projects-set,
+  .about-myself-set {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -531,5 +531,13 @@ body {
 
   .about-myself-text {
     max-width: 80%;
+  }
+
+  .about-myself-set {
+    align-items: stretch;
+  }
+
+  .about-myself-card {
+    margin: 2%;
   }
 }
