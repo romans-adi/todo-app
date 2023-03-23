@@ -40,8 +40,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **HTML**
-- **CSS**
+  <ul>
+    <li><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
+   <li><a href="https://www.w3.org/TR/CSS/#css">CSS</a></li>
+  </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

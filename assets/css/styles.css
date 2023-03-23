@@ -511,6 +511,10 @@ body {
     display: none;
   }
 
+  .headline {
+    margin-top: 10%;
+  }
+
   .projects-set,
   .about-myself-set {
     flex-direction: row;
