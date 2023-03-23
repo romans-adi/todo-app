@@ -277,7 +277,7 @@ body {
 
 .project-card {
   display: grid;
-  grid-template-rows: 60% 20% 20%;
+    grid-template-rows: 55% 30% 10%;
   margin: 3% 0;
   height: 474px;
   max-width: 327px;
@@ -288,6 +288,7 @@ body {
 
 .project-card img {
   max-width: 100%;
+  max-height: 260px;
 }
 
 .project-card-content {
