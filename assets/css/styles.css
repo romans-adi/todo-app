@@ -1,9 +1,14 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
 /* COMMON STYLE */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -19,6 +24,22 @@ body {
 
 .green {
   color: #36b37e;
+}
+
+.btn-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 122px;
+  height: 48px;
+  left: 108px;
+  bottom: 8px;
+  background-color: #36b37f;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 /* TOP NAVIGATION */
@@ -92,7 +113,7 @@ body {
 /* HEADER */
 
 .header {
-  background: url(/header-bg.png) no-repeat top center;
+  background: url(../img/header-bg.png) no-repeat top center;
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -209,11 +230,101 @@ body {
   color: #36b37e;
 }
 
+/* WORKS */
+
+.works-heading {
+  text-align: center;
+}
+
+.projects-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+}
+
+.project-card {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(252px, 1fr));
+  align-items: stretch;
+  margin: 3% 0;
+  height: 474px;
+  min-width: 369px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #d0d9d4;
+}
+
+.project-card-heading {
+  color: #172b4d;
+}
+
+.project-card img {
+  max-width: 100%;
+}
+
+.project-card-content {
+  display: grid;
+  grid-gap: 20px;
+  padding: 3% 3% 6% 3%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.skills-list {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  background-color: #d0d9d4;
+}
+
+.btn-see-project {
+  place-self: center;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 200px) and (max-width: 375px) {
   .headline {
     margin-top: -50%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .skill {
+    padding: 1%;
+  }
+
+  .btn-success {
+    padding: 3%;
+    width: auto;
+    height: auto;
+  }
+
+  .project-card {
+    grid-template-rows: 200px 1fr 1fr;
+    min-width: fit-content;
+    max-width: 369px;
   }
 }
 
@@ -228,12 +339,12 @@ body {
     display: none;
   }
 
-  .header {
-    background: none;
+  .projects-set {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  main {
-    background: url(/header-bg.png) no-repeat top center;
-    background-size: contain;
+  .project-card {
+    margin: 1%;
   }
 }
