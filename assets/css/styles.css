@@ -1,6 +1,6 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
 
 /* COMMON STYLE */
 
@@ -44,9 +44,20 @@ body {
 }
 
 .btn-success:hover {
-  box-shadow: 0px 0px 7px 4px #172b4d;
-  background-color: #172b4d;
+  box-shadow: 0px 8px 16px #36B37F;
+  background-color: #36B37F;
   color:#fff;
+}
+
+.btn-success:active {
+  background-color: #008552;
+}
+
+.section-heading  {
+  text-align: center;
+  font-weight: 700;
+font-size: 40px;
+line-height: 52px;
 }
 
 /* TOP NAVIGATION */
@@ -239,8 +250,8 @@ body {
 
 /* WORKS */
 
-.works-heading {
-  text-align: center;
+.works {
+  padding: 6% 0;
 }
 
 .projects-set {
@@ -305,7 +316,29 @@ body {
   place-self: center;
 }
 
-/* MEDIA QUERIES */
+/* ABOUT */
+
+.about-myself {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 3% 2% 3%;
+}
+
+.about-myself-text {
+  padding: 4%;
+  font-weight: 400;
+font-size: 20px;
+line-height: 160%;
+text-align: center;
+}
+
+.btn-get-resume {
+  place-self: center;
+  width: 153px;
+}
+
+/* --------------------- MEDIA QUERIES --------------------- */
 
 @media only screen and (min-width: 200px) and (max-width: 375px) {
   .headline {
@@ -353,5 +386,9 @@ body {
 
   .project-card {
     margin: 1%;
+  }
+
+  .about-myself-text {
+    max-width: 80%;
   }
 }
