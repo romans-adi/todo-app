@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style-type: none;
 }
 
 body {
@@ -81,6 +82,10 @@ body {
   width: 100%;
   min-height: 44px;
   top: 0;
+}
+
+.nav-list {
+  display: none;
 }
 
 .top-navigation {
@@ -264,37 +269,57 @@ body {
 /* WORKS */
 
 .works {
+  display: flex;
+  flex-direction: column;
   padding: 6% 0;
+  margin-top: -4%;
+}
+
+.works-heading {
+  text-align: center;
+  padding: 5%;
+}
+
+.works-heading::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  max-width: 70%;
+  border-top: 0.4rem solid #36b37e;
+  border-radius: 24px;
+  margin: 2% auto 0;
 }
 
 .projects-set {
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  max-width: 1200px;
   align-items: center;
   justify-content: center;
-  margin: 5%;
 }
 
 .project-card {
-  display: grid;
-  grid-template-rows: 55% 30% 10%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
   margin: 3% 0;
-  height: 474px;
-  max-width: 327px;
+  width: 327px;
   border-radius: 8px;
   background-color: #fff;
   border: 1px solid #d0d9d4;
 }
 
 .project-card img {
-  max-width: 100%;
-  max-height: 260px;
+  width: 100%;
+  height: 200px;
 }
 
 .project-card-content {
   display: grid;
   grid-gap: 20px;
-  padding: 3% 3% 6% 3%;
+  padding: 3%;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -322,11 +347,23 @@ body {
   background-color: #d0d9d4;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+}
+
 .btn-see-project {
   place-self: center;
 }
 
 /* ABOUT */
+
+.about-myself {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
 
 .about-myself-content {
   position: relative;
@@ -336,17 +373,36 @@ body {
   padding: 3% 3% 6% 3%;
 }
 
+.about-myself-content::before {
+  content: "";
+  background: url(/assets/img/about-me-vector-right.png) no-repeat top right;
+  position: absolute;
+  display: flex;
+  top: -10%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.about-myself-content::after {
+  content: "";
+  background: url(/assets/img/about-me-vector-left.png) no-repeat bottom left;
+  position: absolute;
+  display: flex;
+  bottom: 8%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 .about-myself-text {
   padding: 4%;
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
   text-align: center;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
 }
 
 .btn-get-resume {
@@ -465,8 +521,8 @@ body {
 
 @media only screen and (max-width: 330px) {
   .project-card {
-    grid-template-rows: 40% minmax(10rem, max-content) 5rem;
-    height: auto;
+    width: auto;
+    max-width: 327px;
   }
 
   .tools-list {
@@ -481,6 +537,11 @@ body {
     padding: 3%;
     width: auto;
     height: auto;
+  }
+
+  .about-myself-content::before,
+  .about-myself-content::after {
+    opacity: 40%;
   }
 
   .about-myself-card {
@@ -508,6 +569,44 @@ body {
 /* TABLETS and wider screens (MIN WIDTH: 768px) */
 
 @media only screen and (min-width: 768px) {
+  .header {
+    background: url(/assets/img/header-bg-desktop.png) no-repeat top center;
+    background-size: cover;
+    margin-top: -100px;
+    padding-bottom: 150px;
+  }
+
+  .top-navigation {
+    max-height: 50px;
+    top: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 12px;
+    gap: 10px;
+    color: #344563;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 133%;
+  }
+
   .burger {
     display: none;
   }
@@ -516,10 +615,42 @@ body {
     margin-top: 10%;
   }
 
-  .projects-set,
+  .headline-heading {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0.3700000047683716px;
+    text-align: center;
+    margin-top: 8%;
+    padding-bottom: 1%;
+  }
+
+  .supporting-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .social-icon {
+    margin-right: 2.5rem;
+  }
+
+  .social-icon i {
+    font-size: 1.5rem;
+  }
+
+  .projects-set {
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .about-myself-set {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
   }
 
   .project-card {
@@ -531,11 +662,15 @@ body {
     max-width: 80%;
   }
 
-  .about-myself-set {
-    align-items: stretch;
-  }
-
   .about-myself-card {
     margin: 2%;
+  }
+}
+
+/* TABLETS and wider screens (MIN WIDTH: 1200px) */
+
+@media only screen and (min-width: 1200px) {
+  .projects-set {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
