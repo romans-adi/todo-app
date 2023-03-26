@@ -643,6 +643,7 @@ textarea:focus {
 }
 
 .btn-get-in-touch {
+  border-style: none !important;
   margin-top: 0.25rem;
   padding: 0.75rem;
 }
