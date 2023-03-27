@@ -510,6 +510,7 @@ body {
   box-shadow: 0 1rem 1.5rem rgba(37, 47, 137, 0.08);
 }
 
+
 .about-myself-card-heading {
   font-size: 1.5rem;
   padding: 0.313rem;
@@ -866,4 +867,31 @@ textarea:focus {
   .projects-set {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+
+#floats-test ul {
+  width: 90%;
+}
+
+.about-myself-card-list-item {
+  width: 120px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.skill-0{
+  float: left;
+}
+
+.skill-2 {
+  clear: left;
+}
+
+skill-4 {
+  float: right;
+}
+
+.skill-1, skill-3 {
+  float: right;
 }
