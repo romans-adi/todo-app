@@ -552,6 +552,57 @@ body {
   border-radius: 0.5rem;
 }
 
+/* CONTACTS */
+
+.container {
+  padding: 0 10%;
+}
+
+.contact-heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 130%;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 58px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 5%;
+  margin: 5%;
+  outline: none !important;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+}
+
+textarea::placeholder {
+  color: #42526E;
+}
+
+textarea {
+  font-family: 'Inter', sans-serif;
+  outline: none !important;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: 1px solid #60C095;
+}
+
 /* --------------------- MEDIA QUERIES --------------------- */
 
 /* MOBILE S and less (MAX WIDTH: 375px) */
