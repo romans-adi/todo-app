@@ -541,8 +541,6 @@ body {
   align-items: center;
   padding: 0.75rem;
   text-align: center;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 0.75rem;
   line-height: 133%;
@@ -554,53 +552,113 @@ body {
 
 /* CONTACTS */
 
-.container {
-  padding: 0 10%;
+.contacts {
+  position: relative;
+}
+
+.contacts::before {
+  content: '';
+  position: absolute;
+  display: flex;
+  top: 20%;
+  right: 0;
+  height: 91%;
+  width: 100%;
+  z-index: -1;
+  background: url(../img/contact-form-bg.png) no-repeat bottom right;
 }
 
 .contact-heading {
+  margin: 5% 0;
+  padding: 0 10%;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 4vw, 3rem);
   line-height: 130%;
   text-align: center;
 }
 
-form {
+.contact-form {
+  min-width: 2rem;
   width: 100%;
+  padding: 1.875rem;
   display: flex;
   flex-direction: column;
-  margin: 58px;
+  justify-content: center;
 }
 
-input[type="text"]::placeholder,
-input[type="email"]::placeholder {
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  margin-top: 0.375rem;
+  margin-bottom: 0.375rem;
+  resize: both;
+}
+
+input[type=text],
+input[type=email]::placeholder {
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 0.938rem;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
 }
 
-input[type="text"],
-input[type="email"],
 textarea {
-  padding: 5%;
-  margin: 5%;
-  outline: none !important;
-  border: 1px solid #D0D9D4;
-  border-radius: 4px;
+  min-height: 7.188rem;
+  color: #42526e;
+  border: 0.063rem solid #60c095;
+  padding: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 160%;
 }
 
 textarea::placeholder {
-  color: #42526E;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 160%;
+  color: #42526e;
 }
 
-textarea {
-  font-family: 'Inter', sans-serif;
+textarea::-webkit-resizer {
+  background: url(../img/icon-resizer.png) center center;
+  background-size: 200%;
+}
+
+input:focus,
+textarea:focus {
   outline: none !important;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  border: 1px solid #60C095;
+  border: 0.063rem solid tan;
+  box-shadow: 0 0 0.625rem tan;
+}
+
+input:required:focus:invalid,
+textarea:required:focus:invalid {
+  outline: none !important;
+  border: 0.063rem solid #ff6163;
+  box-shadow: 0 0 0.625rem #ff6163;
+}
+
+input:required:focus:valid,
+textarea:required:focus:valid {
+  outline: none !important;
+  border: 0.063rem solid #36b37e;
+  box-shadow: 0 0 0.625rem #36b37e;
+}
+
+.btn-get-in-touch {
+  border-style: none !important;
+  margin-top: 0.25rem;
+  padding: 0.75rem;
 }
 
 #footer {
