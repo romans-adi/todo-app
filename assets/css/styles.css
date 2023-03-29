@@ -510,7 +510,6 @@ body {
   box-shadow: 0 1rem 1.5rem rgba(37, 47, 137, 0.08);
 }
 
-
 .about-myself-card-heading {
   font-size: 1.5rem;
   padding: 0.313rem;
@@ -878,4 +877,3 @@ textarea:required:focus:valid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
