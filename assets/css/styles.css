@@ -246,6 +246,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   list-style: none;
   height: auto;
   width: auto;
