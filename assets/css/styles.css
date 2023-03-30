@@ -651,6 +651,12 @@ textarea:required:focus:valid {
   padding: 0.75rem;
 }
 
+.contact-form-img {
+  display: none;
+}
+
+/* FOOTER */
+
 #footer {
   display: flex;
   flex-direction: column;
