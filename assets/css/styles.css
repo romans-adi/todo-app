@@ -906,6 +906,7 @@ textarea:required:focus:valid {
     background: url(../img/contact-form-bg-desktop.png) no-repeat bottom right;
     top: 0;
     height: 100%;
+    width: 14%;
   }
 
   .contacts::after {
@@ -913,7 +914,7 @@ textarea:required:focus:valid {
     background: url(../img/contact-form-bg-desktop-1.png) no-repeat left;
     top: 5%;
     height: 100%;
-    width: 100%;
+    width: 10%;
     display: flex;
     position: absolute;
   }
