@@ -51,7 +51,7 @@
 
 ## 🚀 Live Demo <a name="live-demo" target="_blank"></a>
 
-- [Live Demo Link](https://juniortestromansspilaks.000webhostapp.com/project-1.html)
+- [Live Demo Link](https://juniortestromansspilaks.000webhostapp.com/project-1/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,7 +104,9 @@ Any text editor of your choice.
 
 👤 **Romans S.**
 
-- GitHub: https://github.com/romans-adi/
+- GitHub: [@romans-adi](https://github.com/romans-adi/)
+- Twitter: [@obj583](https://twitter.com/obj583/)
+- LinkedIn: [Romans Špiļaks](https://www.linkedin.com/in/obj513/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +134,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-It is an open-source project and if you like it, you can re-use this code as much as you want!
+To show your support, you can star this project. I would also appreciate any commentaries.
+Additionally, you can contact me reaching me by any link mentioned in the section <a href="#authors">Authors</a>.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,14 +143,12 @@ It is an open-source project and if you like it, you can re-use this code as muc
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my partners for giving me useful advices!
+I would like to thank my partners for giving me useful advices and Microverse platform for sharing useful information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
-
-This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
