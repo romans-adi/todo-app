@@ -789,20 +789,28 @@ textarea:required:focus:valid {
   }
 
   .headline {
-    margin-top: 10%;
+    margin-top: 16%;
+    position: relative;
+    padding-top: 0;
   }
 
   .headline-heading {
-    font-size: 3rem;
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
     font-weight: 800;
-    line-height: 3.75rem;
+    line-height: 60px;
+    letter-spacing: 0.32px;
     text-align: center;
-    margin-top: 8%;
     padding-bottom: 1%;
   }
 
   .supporting-text {
-    max-width: 70%;
+    max-width: 60%;
+  }
+
+  .social {
+    margin-bottom: 10%;
+    padding-top: 2%;
   }
 
   .social-icon {
@@ -810,8 +818,28 @@ textarea:required:focus:valid {
     padding-left: 1.5rem;
   }
 
+  .social-icon i {
+    font-size: 1.5rem;
+  }
+
+  #header .btn-scroll-down {
+    position: absolute;
+    bottom: 10%;
+  }
+
+  main {
+    padding-top: 6.25rem;
+  }
+
+  h2 span.mobile-break-line {
+    display: inline;
+  }
+
   .projects-set {
     padding: 0;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 32px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -826,25 +854,88 @@ textarea:required:focus:valid {
     min-width: 23.063rem;
   }
 
+  .tools-list {
+    padding: 0 5%;
+  }
+
+  .btn-see-project {
+    margin-bottom: 1rem;
+  }
+
   .about-myself-text {
-    max-width: 80%;
+    max-width: 65%;
   }
 
   .about-myself-card {
     margin: 2%;
   }
 
+  .about-myself-content {
+    padding-bottom: 0;
+  }
+
+  .about-myself-content::before {
+    background: url(../img/about-me-vector-right-desktop.png) no-repeat top right;
+    background-size: 10%;
+    top: 0;
+  }
+
+  .about-myself-content::after {
+    background: url(../img/about-me-vector-left-desktop.png) no-repeat bottom left;
+    background-size: 10%;
+    bottom: 25%;
+  }
+
   .container {
     flex-direction: row;
+    padding: 0 9%;
+  }
+
+  .contacts {
+    min-height: 600px;
+    margin-bottom: 1%;
+  }
+
+  .contacts::before {
+    background: url(../img/contact-form-bg-desktop.png) no-repeat bottom right;
+    top: 0;
+    height: 100%;
+  }
+
+  .contacts::after {
+    content: '';
+    background: url(../img/contact-form-bg-desktop-1.png) no-repeat left;
+    top: 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
   }
 
   .contact-heading {
-    padding: 0;
-    text-align: end;
+    width: 79%;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    padding: 0 0 0 4%;
+    margin-top: 0;
+    text-align: right;
+  }
+
+  .btn-get-in-touch {
+    place-self: flex-start;
+  }
+
+  .contact-form-img {
+    display: block;
+    position: absolute;
+    left: 20%;
+    transform: scale(0.5);
   }
 
   .social-footer {
     padding-top: 3%;
+    margin: 0;
   }
 
   .social-footer::after,
