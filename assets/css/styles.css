@@ -262,12 +262,6 @@ body {
   height: 5%;
 }
 
-.social-icon i {
-  color: #505f79;
-  font-size: 1.3rem;
-  line-height: 1.3rem;
-}
-
 /* SCROLL BUTTON */
 
 .btn-scroll-down {
@@ -304,10 +298,6 @@ body {
   background-color: #36b37e;
   color: #fff;
   cursor: pointer;
-}
-
-.social-icon i:hover {
-  color: #36b37e;
 }
 
 /* WORKS */
@@ -818,10 +808,6 @@ textarea:required:focus:valid {
   .social-icon {
     margin-right: 1.5rem;
     padding-left: 1.5rem;
-  }
-
-  .social-icon i {
-    font-size: 1.5rem;
   }
 
   .projects-set {
