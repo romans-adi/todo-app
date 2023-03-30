@@ -608,6 +608,7 @@ textarea {
   font-weight: 400;
   font-size: 0.938rem;
   line-height: 160%;
+  background: url(../img/icon-resizer.png) no-repeat bottom right;
 }
 
 textarea::placeholder {
@@ -620,8 +621,7 @@ textarea::placeholder {
 }
 
 textarea::-webkit-resizer {
-  background: url(../img/icon-resizer.png) center center;
-  background-size: 200%;
+  display: none;
 }
 
 input:focus,
