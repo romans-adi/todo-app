@@ -41,8 +41,9 @@
 ### Key Features <a name="key-features"></a>
 
   <ul>
-    <li><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
-   <li><a href="https://www.w3.org/TR/CSS/#css">CSS</a></li>
+    <li>Responsiveness</li>
+   <li>Accessibility</li>
+   <li>Best practice of HTML and CSS</li>
   </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
