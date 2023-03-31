@@ -373,6 +373,11 @@ body {
 
 .project-card-heading {
   padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 133%;
 }
 
 .tools-list {
@@ -494,7 +499,7 @@ body {
 
 .about-myself-card:hover {
   background-color: #fff;
-  border: 1px solid #36b37f;
+  border: 0.063rem solid #36b37f;
 }
 
 .round-icon {
@@ -810,9 +815,9 @@ textarea:required:focus:valid {
   .nav-link a:hover {
     transform: scale(1.1);
     background-color: #36b37e;
-    border-radius: 4px;
-    padding: 5px;
-    margin: 10px;
+    border-radius: 0.25rem;
+    padding: 0.313rem;
+    margin: 0.625rem;
     color: #fff;
   }
 
@@ -828,9 +833,9 @@ textarea:required:focus:valid {
 
   .headline-heading {
     font-family: "Inter", sans-serif;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
-    line-height: 60px;
+    line-height: 3.75rem;
     letter-spacing: 0.32px;
     text-align: center;
     padding-bottom: 1%;
@@ -870,8 +875,8 @@ textarea:required:focus:valid {
   .projects-set {
     padding: 0;
     margin: 0 auto;
-    column-gap: 24px;
-    row-gap: 32px;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -929,7 +934,7 @@ textarea:required:focus:valid {
   }
 
   .contacts {
-    min-height: 600px;
+    min-height: 37.5rem;
     margin-bottom: 1%;
   }
 
@@ -953,8 +958,8 @@ textarea:required:focus:valid {
   .contact-heading {
     width: 79%;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 52px;
+    font-size: 1.875rem;
+    line-height: 3.25rem;
     padding: 0 0 0 4%;
     margin-top: 0;
     text-align: right;
