@@ -12,6 +12,11 @@
   list-style-type: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 /* -----LAYOUT----- */
 
 html,
@@ -278,6 +283,7 @@ body {
   height: 2.5rem;
   border: 0.125rem solid transparent;
   border-radius: 6.25rem;
+  transition: 0.6s all ease-in;
 }
 
 .chevron-down::after {
@@ -483,6 +489,12 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 133%;
+  transition: all 1s ease-in;
+}
+
+.about-myself-card:hover {
+  background-color: #fff;
+  border: 1px solid #36b37f;
 }
 
 .round-icon {
@@ -760,13 +772,14 @@ textarea:required:focus:valid {
   }
 
   .top-navigation {
+    position: relative;
     max-height: 3.125rem;
-    top: 0;
     margin-top: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: auto;
+    z-index: 50;
   }
 
   .nav-list {
@@ -788,6 +801,19 @@ textarea:required:focus:valid {
     font-weight: 600;
     font-size: 0.938rem;
     line-height: 133%;
+  }
+
+  .nav-link a {
+    transition: all 0.6s ease-in;
+  }
+
+  .nav-link a:hover {
+    transform: scale(1.1);
+    background-color: #36b37e;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
+    color: #fff;
   }
 
   .burger {
@@ -858,6 +884,11 @@ textarea:required:focus:valid {
   .project-card {
     margin: 1%;
     min-width: 23.063rem;
+    transition: all 1s ease-in-out;
+  }
+
+  .project-card:hover {
+    transform: translateY(-2%);
   }
 
   .tools-list {
