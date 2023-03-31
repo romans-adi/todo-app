@@ -350,6 +350,10 @@ body {
   background-color: #fff;
 }
 
+.placeholder-img {
+  width: 100%;
+}
+
 .project-card img {
   width: 100%;
   height: auto;
