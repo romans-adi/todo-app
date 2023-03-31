@@ -25,7 +25,7 @@
 
 # 📖 <a name="about-project">Hello Microverse</a>
 
-**Romans's Portfolio** is a project that represents information about his skills and tools he used in previous work.
+**Romans's Portfolio** is a project that represents information about skills and tools he used in previous works.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -115,8 +115,6 @@ Any text editor of your choice.
 ### Future Features <a name="future-features"></a>
 
 - **Adding dynamics using JavaScript**
-- **Adding new sections**
-- **Adding accessibility**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
