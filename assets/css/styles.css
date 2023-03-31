@@ -21,11 +21,11 @@
   0% {
       background: #fff;
     }
-  
+
     50% {
-      background: #058263;
+      background: #04aa6d;
     }
-  
+
     100% {
       background: #fff;
     }
@@ -94,7 +94,7 @@ body {
   font-weight: 500;
   font-size: 1rem;
   line-height: 141%;
-  background-color: #15784f;
+  background-color: #04aa6d;
   color: white;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -582,7 +582,7 @@ body {
   font-size: 0.75rem;
   line-height: 133%;
   letter-spacing: 0.03em;
-  color: #15784f;
+  color: #04aa6d;
   background-color: #fff;
   border-radius: 0.5rem;
 }
