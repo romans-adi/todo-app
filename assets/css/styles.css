@@ -34,10 +34,6 @@ main {
   min-height: 100%;
 }
 
-.main {
-  flex: 1 0 auto;
-}
-
 .footer {
   flex: 0 0 auto;
 }
@@ -874,9 +870,9 @@ textarea:required:focus:valid {
     padding-top: 6.25rem;
   }
 
-  h2 span.mobile-break-line {
-    display: inline;
-  }
+  .works-heading br{
+    display: none;
+    }
 
   .projects-set {
     padding: 0;
@@ -991,6 +987,26 @@ textarea:required:focus:valid {
   .social-footer::after,
   .footer-email {
     display: none;
+  }
+
+  .social-icons-set :nth-child(1) {
+    order: 4;
+  }
+
+  .social-icons-set :nth-child(2) {
+    order: 2;
+  }
+
+  .social-icons-set :nth-child(3) {
+    order: 5;
+  }
+
+  .social-icons-set :nth-child(4) {
+    order: 1;
+  }
+
+  .social-icons-set :nth-child(5) {
+    order: 3;
   }
 
   #footer {
