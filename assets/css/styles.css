@@ -1134,7 +1134,7 @@ textarea:required:focus:valid {
     animation: color-change-2x 0.6s linear forwards;
     z-index: 99;
   }
-  
+
   .contact-heading {
     width: 79%;
     font-weight: 700;
