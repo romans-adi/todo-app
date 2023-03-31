@@ -25,7 +25,7 @@
 
 # 📖 <a name="about-project">Hello Microverse</a>
 
-**Romans's Portfolio** is a project that represents information about his skills and tools he used in previous work.
+**Romans's Portfolio** is a project that represents information about skills and tools he used in previous works.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,8 +41,9 @@
 ### Key Features <a name="key-features"></a>
 
   <ul>
-    <li><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
-   <li><a href="https://www.w3.org/TR/CSS/#css">CSS</a></li>
+    <li>Responsiveness</li>
+   <li>Accessibility</li>
+   <li>Best practice of HTML and CSS</li>
   </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -115,8 +116,6 @@ Any text editor of your choice.
 ### Future Features <a name="future-features"></a>
 
 - **Adding dynamics using JavaScript**
-- **Adding new sections**
-- **Adding accessibility**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="This is Romans' portfolio page.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>Portfolio</title>
@@ -12,9 +13,9 @@
 <body>
   <nav id="nav" class="navbar top-navigation">
     <ul class="nav-list">
-      <li class="nav-link">Portfolio</li>
-      <li class="nav-link">About</li>
-      <li class="nav-link">Contact</li>
+      <li class="nav-link"><a href="#works">Portfolio</a></li>
+      <li class="nav-link"><a href="#about-myself">About</a></li>
+      <li class="nav-link"><a href="#contacts">Contact</a></li>
     </ul>
     <div class="bars"></div>
     <input id="toggle" type="checkbox"></input>
@@ -57,23 +58,26 @@
             </li>
           </ul>
         </div>
-        <div class="btn-scroll-down">
-          <div class="chevron-down">
-          </div>
+        <a class="btn-scroll-down-link" aria-label="Works" href="#works">
+          <div class="btn-scroll-down">
+            <div class="chevron-down">
+            </div>
+        </a>
       </section>
     </header>
     <main>
 
       <section id="works" class="works">
-        <div>
-          <h2 class="blue section-heading works-heading">My Recent<br> Works</h2>
-        </div>
+        <h2 class="blue section-heading works-heading">My Recent<br> Works</h2>
         <div class="projects-set">
           <div class="project-card">
-            <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-              class="project-screenshot project-0">
+            <picture class="placeholder-img">
+              <source srcset="assets/img/img-placeholder.webp" />
+              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
+                class="project-screenshot project-0">
+            </picture>
             <div class="project-card-content">
-              <h4 class="project-card-heading">Multi-Post Stories Gain+Glory</h4>
+              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
               <ul class="tools-list">
                 <li class="tool">Ruby on Rails</li>
                 <li class="tool">CSS</li>
@@ -84,10 +88,13 @@
             </div>
           </div>
           <div class="project-card">
-            <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-              class="project-screenshot project-0">
+            <picture class="placeholder-img">
+              <source srcset="assets/img/img-placeholder.webp" />
+              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
+                class="project-screenshot project-0">
+            </picture>
             <div class="project-card-content">
-              <h4 class="project-card-heading">Multi-Post Stories Gain+Glory</h4>
+              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
               <ul class="tools-list">
                 <li class="tool">Ruby on Rails</li>
                 <li class="tool">CSS</li>
@@ -98,10 +105,13 @@
             </div>
           </div>
           <div class="project-card">
-            <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-              class="project-screenshot project-0">
+            <picture class="placeholder-img">
+              <source srcset="assets/img/img-placeholder.webp" />
+              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
+                class="project-screenshot project-0">
+            </picture>
             <div class="project-card-content">
-              <h4 class="project-card-heading">Multi-Post Stories Gain+Glory</h4>
+              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
               <ul class="tools-list">
                 <li class="tool">Ruby on Rails</li>
                 <li class="tool">CSS</li>
@@ -112,10 +122,13 @@
             </div>
           </div>
           <div class="project-card">
-            <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-              class="project-screenshot project-0">
+            <picture class="placeholder-img">
+              <source srcset="assets/img/img-placeholder.webp" />
+              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
+                class="project-screenshot project-0">
+            </picture>
             <div class="project-card-content">
-              <h4 class="project-card-heading">Multi-Post Stories Gain+Glory</h4>
+              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
               <ul class="tools-list">
                 <li class="tool">Ruby on Rails</li>
                 <li class="tool">CSS</li>
@@ -126,10 +139,13 @@
             </div>
           </div>
           <div class="project-card">
-            <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-              class="project-screenshot project-0">
+            <picture class="placeholder-img">
+              <source srcset="assets/img/img-placeholder.webp" />
+              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
+                class="project-screenshot project-0">
+            </picture>
             <div class="project-card-content">
-              <h4 class="project-card-heading">Multi-Post Stories Gain+Glory</h4>
+              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
               <ul class="tools-list">
                 <li class="tool">Ruby on Rails</li>
                 <li class="tool">CSS</li>
@@ -140,10 +156,13 @@
             </div>
           </div>
           <div class="project-card">
-            <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-              class="project-screenshot project-0">
+            <picture class="placeholder-img">
+              <source srcset="assets/img/img-placeholder.webp" />
+              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
+                class="project-screenshot project-0">
+            </picture>
             <div class="project-card-content">
-              <h4 class="project-card-heading">Multi-Post Stories Gain+Glory</h4>
+              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
               <ul class="tools-list">
                 <li class="tool">Ruby on Rails</li>
                 <li class="tool">CSS</li>
@@ -210,45 +229,47 @@
             </ul>
           </div>
         </div>
-          <section class="contacts">
-            <div class="container">
-              <h2 class="contact-heading">
-                I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-              </h2>
-              <form class="contact-form" action="https://formspree.io/f/xyyadldd" method="POST">
-                <input id="username" type="text" name="full-name" maxlength="30" placeholder="Full name" required aria-label="username">
-                <input id="email" name="email" type="email" placeholder="Email address" required aria-label="email">
-                <textarea id="message" maxlength="500" placeholder="Hey I’d like to connect to..." required aria-label="message"></textarea>
-                  <button type="submit" class="btn-success btn-get-in-touch">Get in touch</button>
-              </form>
-            </div>
-            <img src="assets/img/contact-form-img.png" class="contact-form-img" alt="Contact form illustration">
-          </section>
-        </main>
-
-        <footer id="footer">
-          <p class="supporting-text blue footer-email">romans.spilaks<span class="br"></span>@gmail.com</p>
-          <div class="social social-footer">
-            <ul class="social-icons-set">
-              <li class="social-icon">
-                <a href="#"><img src="assets/img/icons/twitter.svg" alt="Twitter"></a>
-              </li>
-              <li class="social-icon">
-                <a href="#"><img src="assets/img/icons/Linkedin icon.svg" alt="LinkedIn"></a>
-              </li>
-              <li class="social-icon">
-                <a href="#"><img src="assets/img/icons/medium.svg" alt="Medium"></a>
-              </li>
-              <li class="social-icon">
-                <a href="#"><img src="assets/img/icons/github.svg" alt="GitHub"></a>
-              </li>
-              <li class="social-icon">
-                <a href="#"><img src="assets/img/icons/angellist.svg" alt="Angellist"></a>
-              </li>
-            </ul>
+        <section class="contacts" id="contacts">
+          <div class="container">
+            <h3 class="contact-heading">
+              I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+            </h3>
+            <form class="contact-form" action="https://formspree.io/f/xyyadldd" method="POST">
+              <input id="username" type="text" name="full-name" maxlength="30" placeholder="Full name" required
+                aria-label="username">
+              <input id="email" name="email" type="email" placeholder="Email address" required aria-label="email">
+              <textarea id="message" maxlength="500" placeholder="Hey I’d like to connect to..." required
+                aria-label="message"></textarea>
+              <button type="submit" class="btn-success btn-get-in-touch">Get in touch</button>
+            </form>
           </div>
-        </footer>
-      </div>
-      </body>
+          <img src="assets/img/contact-form-img.png" class="contact-form-img" alt="Contact form illustration">
+        </section>
+    </main>
 
-      </html>
+    <footer id="footer">
+      <p class="supporting-text blue footer-email">romans.spilaks<span class="br"></span>@gmail.com</p>
+      <div class="social social-footer">
+        <ul class="social-icons-set">
+          <li class="social-icon">
+            <a href="#"><img src="assets/img/icons/twitter.svg" alt="Twitter"></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"><img src="assets/img/icons/Linkedin icon.svg" alt="LinkedIn"></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"><img src="assets/img/icons/medium.svg" alt="Medium"></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"><img src="assets/img/icons/github.svg" alt="GitHub"></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"><img src="assets/img/icons/angellist.svg" alt="Angellist"></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
