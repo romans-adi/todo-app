@@ -2,6 +2,35 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap");
 
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #fff;
+  }
+
+  50% {
+    background: #058263;
+  }
+
+  100% {
+    background: #fff;;
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+      background: #fff;
+    }
+  
+    50% {
+      background: #058263;
+    }
+  
+    100% {
+      background: #fff;
+    }
+}
+
 /* RESET */
 
 * {
@@ -958,6 +987,18 @@ textarea:required:focus:valid {
     position: absolute;
   }
 
+#message {
+  transition: 2s all ease-out;
+}
+
+#message:focus {
+  transform: scale(1.5) translate(-30%, 123%);
+  background-color: #fff;
+  box-shadow: none;
+  -webkit-animation: color-change-2x 2s linear forwards;
+  animation: color-change-2x 2s linear forwards;
+  z-index: 99;
+}
   .contact-heading {
     width: 79%;
     font-weight: 700;
