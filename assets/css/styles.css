@@ -4,107 +4,122 @@
 
 /* ANIMATIONS */
 
- @-webkit-keyframes bounce-top {
+@-webkit-keyframes bounce-top {
   0% {
     -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
+    transform: translateY(-45px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
     opacity: 1;
   }
+
   24% {
     opacity: 1;
   }
+
   40% {
     -webkit-transform: translateY(-24px);
-            transform: translateY(-24px);
+    transform: translateY(-24px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
+
   65% {
     -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
+    transform: translateY(-12px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
+
   82% {
     -webkit-transform: translateY(-6px);
-            transform: translateY(-6px);
+    transform: translateY(-6px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
+
   93% {
     -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
+    transform: translateY(-4px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
+
   25%,
   55%,
   75%,
   87% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
+
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     opacity: 1;
   }
 }
+
 @keyframes bounce-top {
   0% {
     -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
+    transform: translateY(-45px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
     opacity: 1;
   }
+
   24% {
     opacity: 1;
   }
+
   40% {
     -webkit-transform: translateY(-24px);
-            transform: translateY(-24px);
+    transform: translateY(-24px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
+
   65% {
     -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
+    transform: translateY(-12px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
+
   82% {
     -webkit-transform: translateY(-6px);
-            transform: translateY(-6px);
+    transform: translateY(-6px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
+
   93% {
     -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
+    transform: translateY(-4px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
+
   25%,
   55%,
   75%,
   87% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
+
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     opacity: 1;
   }
 }
@@ -115,7 +130,7 @@
   }
 
   10% {
-    background: #73dbc1;;
+    background: #73dbc1;
   }
 
   30% {
@@ -123,7 +138,7 @@
   }
 
   50% {
-    background: #73dbc1;;
+    background: #73dbc1;
   }
 
   100% {
@@ -137,7 +152,7 @@
   }
 
   10% {
-    background: #73dbc1;;
+    background: #73dbc1;
   }
 
   30% {
@@ -145,7 +160,7 @@
   }
 
   50% {
-    background: #73dbc1;;
+    background: #73dbc1;
   }
 
   100% {
@@ -525,7 +540,7 @@ body {
 
 .project-card-heading {
   padding: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.5rem;
@@ -716,7 +731,7 @@ body {
 }
 
 .contacts::before {
-  content: '';
+  content: "";
   position: absolute;
   display: flex;
   top: 20%;
@@ -745,8 +760,8 @@ body {
   justify-content: center;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   width: 100%;
   padding: 0.75rem;
@@ -758,8 +773,8 @@ textarea {
   resize: both;
 }
 
-input[type=text],
-input[type=email]::placeholder {
+input[type="text"],
+input[type="email"]::placeholder {
   font-style: italic;
   font-weight: 400;
   font-size: 0.938rem;
@@ -781,7 +796,7 @@ textarea {
 }
 
 textarea::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.938rem;
@@ -985,7 +1000,7 @@ textarea:required:focus:valid {
     text-align: center;
     padding-bottom: 1%;
     -webkit-animation: bounce-top 2s both;
-	        animation: bounce-top 2s both;
+    animation: bounce-top 2s both;
   }
 
   .supporting-text {
@@ -1015,9 +1030,9 @@ textarea:required:focus:valid {
     padding-top: 6.25rem;
   }
 
-  .works-heading br{
+  .works-heading br {
     display: none;
-    }
+  }
 
   .projects-set {
     padding: 0;
@@ -1065,13 +1080,17 @@ textarea:required:focus:valid {
   }
 
   .about-myself-content::before {
-    background: url(../img/about-me-vector-right-desktop.png) no-repeat top right;
+    background:
+      url(../img/about-me-vector-right-desktop.png) no-repeat top
+      right;
     background-size: 10%;
     top: 0;
   }
 
   .about-myself-content::after {
-    background: url(../img/about-me-vector-left-desktop.png) no-repeat bottom left;
+    background:
+      url(../img/about-me-vector-left-desktop.png) no-repeat bottom
+      left;
     background-size: 10%;
     bottom: 25%;
   }
@@ -1094,7 +1113,7 @@ textarea:required:focus:valid {
   }
 
   .contacts::after {
-    content: '';
+    content: "";
     background: url(../img/contact-form-bg-desktop-1.png) no-repeat left;
     top: 5%;
     height: 100%;
@@ -1103,18 +1122,19 @@ textarea:required:focus:valid {
     position: absolute;
   }
 
-#message {
-  transition: 2s all ease-out;
-}
+  #message {
+    transition: 2s all ease-out;
+  }
 
-#message:focus {
-  transform: scale(1.5) translate(-30%, 123%);
-  background-color: #fff;
-  box-shadow: none;
-  -webkit-animation: color-change-2x 0.6s linear forwards;
-  animation: color-change-2x 0.6s linear forwards;
-  z-index: 99;
-}
+  #message:focus {
+    transform: scale(1.5) translate(-30%, 123%);
+    background-color: #fff;
+    box-shadow: none;
+    -webkit-animation: color-change-2x 0.6s linear forwards;
+    animation: color-change-2x 0.6s linear forwards;
+    z-index: 99;
+  }
+  
   .contact-heading {
     width: 79%;
     font-weight: 700;
