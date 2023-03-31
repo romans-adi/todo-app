@@ -678,13 +678,6 @@ textarea:focus {
   box-shadow: 0 0 0.625rem tan;
 }
 
-input:required:focus:invalid,
-textarea:required:focus:invalid {
-  outline: none !important;
-  border: 0.063rem solid #ff6163;
-  box-shadow: 0 0 0.625rem #ff6163;
-}
-
 input:required:focus:valid,
 textarea:required:focus:valid {
   outline: none !important;
