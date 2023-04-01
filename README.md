@@ -52,7 +52,7 @@
 
 ## 🚀 Live Demo <a name="live-demo" target="_blank"></a>
 
-- [Live Demo Link](https://juniortestromansspilaks.000webhostapp.com/project-1/index.html)
+- [Live Demo Link](https://romans-adi.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,6 +122,16 @@ Any text editor of your choice.
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
+
+Contributors:
+
+👤 **Benson**
+
+- GitHub: [@BenMKT](https://github.com/BenMKT/)
+
+👤  **Diariatou**
+
+- GitHub: [@diarisdiakite](https://github.com/diarisdiakite/)
 
 Contributions, issues, and feature requests are welcome!
 
