@@ -95,7 +95,7 @@ To run the project, execute the following command:
 
 You can deploy this project using:
 
-Any text editor of your choice.
+- [GitHub Pages](https://pages.github.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
