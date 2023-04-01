@@ -77,19 +77,33 @@ Choose the directory on your local machine where you want to copy project. For e
 Clone the project using one of the options.
 
 Using SSH-key:
-  > git clone git@github.com:romans-adi/portfolio-00.git
+  > git clone git@github.com:romans-adi/romans-adi.github.io.git
 
 Using HTTPS:
-  > git clone https://github.com/romans-adi/portfolio-00.git
+  > git clone https://github.com/romans-adi/romans-adi.github.io.git
 
 You can also create the new directory just adding the name of it in the end of command. For example:
-  > git clone https://github.com/romans-adi/portfolio-00.git portfolio-00
+  > git clone https://github.com/romans-adi/romans-adi.github.io.git portfolio
 
 ### Usage
 
 To run the project, execute the following command:
 
+Linux:
+
  > xdg-open index.html
+
+Windows:
+
+> start index.html
+
+MacOS:
+
+> open index.html
+
+Cygwin:
+
+> cygstart index.html
 
 ### Deployment
 
