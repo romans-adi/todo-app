@@ -52,7 +52,7 @@
 
 ## 🚀 Live Demo <a name="live-demo" target="_blank"></a>
 
-- [Live Demo Link](https://romans-adi.github.io/)
+- [Online version of my project](https://romans-adi.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
