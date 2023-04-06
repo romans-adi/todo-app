@@ -233,6 +233,7 @@ body {
   line-height: 141%;
   background-color: #008552;
   color: white;
+  border: 1px solid transparent;
   border-radius: 0.25rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -763,6 +764,7 @@ body {
 input[type="text"],
 input[type="email"],
 textarea {
+  outline: none !important;
   width: 100%;
   padding: 0.75rem;
   border: 0.063rem solid #ccc;
@@ -810,14 +812,12 @@ textarea::-webkit-resizer {
 
 input:focus,
 textarea:focus {
-  outline: none !important;
   border: 0.063rem solid tan;
   box-shadow: 0 0 0.625rem tan;
 }
 
 input:required:focus:valid,
 textarea:required:focus:valid {
-  outline: none !important;
   border: 0.063rem solid #36b37e;
   box-shadow: 0 0 0.625rem #36b37e;
 }
@@ -1120,19 +1120,6 @@ textarea:required:focus:valid {
     width: 10%;
     display: flex;
     position: absolute;
-  }
-
-  #message {
-    transition: 2s all ease-out;
-  }
-
-  #message:focus {
-    transform: scale(1.5) translate(-30%, 123%);
-    background-color: #fff;
-    box-shadow: none;
-    -webkit-animation: color-change-2x 0.6s linear forwards;
-    animation: color-change-2x 0.6s linear forwards;
-    z-index: 99;
   }
 
   .contact-heading {
