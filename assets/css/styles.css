@@ -363,7 +363,7 @@ body {
 
 #header {
   background: url(../img/header-bg.png) no-repeat top center;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -372,6 +372,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   padding-bottom: 5%;
+  height: 100vh;
 }
 
 /* HEADLINE */
