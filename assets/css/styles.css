@@ -233,6 +233,7 @@ body {
   line-height: 141%;
   background-color: #008552;
   color: white;
+  border: 1px solid transparent;
   border-radius: 0.25rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -371,12 +372,13 @@ body {
   margin: 0 auto;
   overflow: hidden;
   padding-bottom: 5%;
+  height: 100vh;
+  margin-top: -10%;
 }
 
 /* HEADLINE */
 
 .headline {
-  margin-top: 16%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -388,14 +390,14 @@ body {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 130%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   text-align: center;
 }
 
-.supporting-text {
+header .headline .supporting-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 3vw, 1.25rem);
   line-height: 140%;
   text-align: center;
 }
@@ -422,8 +424,7 @@ body {
 .social-icon {
   display: flex;
   vertical-align: top;
-  margin-right: 1.3rem;
-  padding-left: 1.3rem;
+  margin: 0 1.3rem;
   padding-bottom: 2rem;
   width: 5%;
   height: 5%;
@@ -763,6 +764,7 @@ body {
 input[type="text"],
 input[type="email"],
 textarea {
+  outline: none !important;
   width: 100%;
   padding: 0.75rem;
   border: 0.063rem solid #ccc;
@@ -810,14 +812,12 @@ textarea::-webkit-resizer {
 
 input:focus,
 textarea:focus {
-  outline: none !important;
   border: 0.063rem solid tan;
   box-shadow: 0 0 0.625rem tan;
 }
 
 input:required:focus:valid,
 textarea:required:focus:valid {
-  outline: none !important;
   border: 0.063rem solid #36b37e;
   box-shadow: 0 0 0.625rem #36b37e;
 }
@@ -987,7 +987,7 @@ textarea:required:focus:valid {
   }
 
   .headline {
-    margin-top: 16%;
+    margin-top: 22.22%;
     position: relative;
     padding-top: 0;
   }
@@ -1010,11 +1010,6 @@ textarea:required:focus:valid {
   .social {
     margin-bottom: 10%;
     padding-top: 2%;
-  }
-
-  .social-icon {
-    margin-right: 1.5rem;
-    padding-left: 1.5rem;
   }
 
   .social-icon i {
@@ -1120,19 +1115,6 @@ textarea:required:focus:valid {
     width: 10%;
     display: flex;
     position: absolute;
-  }
-
-  #message {
-    transition: 2s all ease-out;
-  }
-
-  #message:focus {
-    transform: scale(1.5) translate(-30%, 123%);
-    background-color: #fff;
-    box-shadow: none;
-    -webkit-animation: color-change-2x 0.6s linear forwards;
-    animation: color-change-2x 0.6s linear forwards;
-    z-index: 99;
   }
 
   .contact-heading {
