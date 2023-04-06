@@ -363,7 +363,7 @@ body {
 
 #header {
   background: url(../img/header-bg.png) no-repeat top center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   width: 100%;
