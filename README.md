@@ -56,6 +56,14 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- VIDEO PRESENTATION -->
+
+## :video_camera: Video Presentation <a name="video-presentation" target="_blank"></a>
+
+- [Video Presentation](https://www.loom.com/share/5731ea4676184d028adfaab91a1379a9)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
