@@ -373,12 +373,12 @@ body {
   overflow: hidden;
   padding-bottom: 5%;
   height: 100vh;
+  margin-top: -10%;
 }
 
 /* HEADLINE */
 
 .headline {
-  margin-top: 16%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -390,14 +390,14 @@ body {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 130%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   text-align: center;
 }
 
-.supporting-text {
+header .headline .supporting-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 3vw, 1.25rem);
   line-height: 140%;
   text-align: center;
 }
