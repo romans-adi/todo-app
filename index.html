@@ -11,27 +11,17 @@
 </head>
 
 <body>
-  <nav id="nav" class="navbar top-navigation mx-10">
-    <ul class="nav-list">
-      <li class="nav-link"><a href="#works">Portfolio</a></li>
-      <li class="nav-link"><a href="#about-myself">About</a></li>
-      <li class="nav-link"><a href="#contacts">Contact</a></li>
-    </ul>
-    <div class="bars"></div>
-    <input id="toggle" type="checkbox"></input>
-    <label for="toggle" class="burger">
-      <div class="burger-btn">
-        <div class="burger-lines">
-          <span class="burger-line line-0"></span>
-          <span class="burger-line line-1"></span>
-          <span class="burger-line line-2"></span>
-        </div>
-      </div>
-    </label>
-  </nav>
-
   <div class="wrapper">
     <header id="header">
+      <button class="nav-toggle" aria-controls="top-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+      <nav id="top-navigation" class="top-navigation" data-visible="false">
+        <ul class="nav-list">
+          <li class="nav-link"><a href="#works">Portfolio</a></li>
+          <li class="nav-link"><a href="#about-myself">About</a></li>
+          <li class="nav-link"><a href="#contacts">Contact</a></li>
+        </ul>
+        <div class="bars"></div>
+      </nav>
       <section class="headline">
         <h1 class="headline-heading"><span class="blue">Hey there.<br> I’m Romans.</span><br>
           <span class="green">I’m a software developer</span>
@@ -270,6 +260,7 @@
       </div>
     </footer>
   </div>
+  <script src="assets/js/app.js"></script>
 </body>
 
 </html>
