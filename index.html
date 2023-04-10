@@ -11,17 +11,23 @@
 </head>
 
 <body>
+  <button class="nav-toggle" aria-controls="top-navigation" aria-expanded="false">
+    <svg class="burger" viewBox="0 0 100 100">
+      <rect class="burger-line burger-line-top" width="80" height="10" x="10" y="20" rx="5"></rect>
+      <rect class="burger-line burger-line-middle" width="80" height="10" x="10" y="50" rx="5"></rect>
+      <rect class="burger-line burger-line-bottom" width="80" height="10" x="10" y="80" rx="5"></rect>
+      <span class="sr-only">Menu</span>
+    </svg>
+  </button>
+  <nav id="top-navigation" class="top-navigation" data-visible="false">
+    <ul class="nav-list">
+      <li class="nav-link"><a href="#works">Portfolio</a></li>
+      <li class="nav-link"><a href="#about-myself">About</a></li>
+      <li class="nav-link"><a href="#contacts">Contact</a></li>
+    </ul>
+  </nav>
   <div class="wrapper">
     <header id="header">
-      <button class="nav-toggle" aria-controls="top-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
-      <nav id="top-navigation" class="top-navigation" data-visible="false">
-        <ul class="nav-list">
-          <li class="nav-link"><a href="#works">Portfolio</a></li>
-          <li class="nav-link"><a href="#about-myself">About</a></li>
-          <li class="nav-link"><a href="#contacts">Contact</a></li>
-        </ul>
-        <div class="bars"></div>
-      </nav>
       <section class="headline">
         <h1 class="headline-heading"><span class="blue">Hey there.<br> I’m Romans.</span><br>
           <span class="green">I’m a software developer</span>

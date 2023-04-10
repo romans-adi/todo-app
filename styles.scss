@@ -291,35 +291,25 @@ border-width: 0;
   text-align: center;
 }
 
-.bars {
-  background: url(../img/bars.png) no-repeat;
-  background-size: contain;
-  position: absolute;
-  width: 93%;
-  min-height: 2.75rem;
-  top: 0;
-}
-
 .top-navigation {
-  height: 30vh;
-  height: 30svh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   min-height: 5.75rem;
-  padding: 2em;
+  padding: 3em 0;
   position: fixed;
-  background: hsla(155, 54%, 46%, 0.438);
+  background: hsla(228,7.5%,13.1%, 0.4);
   inset: 0 0 0 65%;
-  backdrop-filter: blur(0.2rem);
+  backdrop-filter: blur(0.1rem);
   border: 1px solid transparent;
   border-radius: 8px;
   z-index: 444;
   margin: 1rem 1rem 0 0;
-  transition: transform 300ms ease-in-out;
+  transition: transform 800ms ease-in-out;
 }
 
 .top-navigation[data-visible="false"] {
-  transform: translatex(110%);
+  transform: translatex(120%);
 }
 
 .top-navigation [data-visible="true"] {
@@ -328,28 +318,52 @@ border-width: 0;
 
 @supports (backdrop-filter: blur(0.5rem)) {
   .top-navigation {
-    background: hsla(155, 54%, 46%, 0.438);
+    background: hsla(228,7.5%,13.1%, 0.4);
     backdrop-filter: blur(0.2rem);
   }
 }
 
 .nav-list {
-  padding: 3rem 3rem 0 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 1rem;
+  align-items: center;
  }
 
 .nav-link a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-weight: 600;
   font-size: clamp(0.7rem, 4vw, 1.4rem);
-  color: hsl(0, 0%, 0%);
+  color: #fff;
   font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.166rem;
+  transition: all 500ms ease-out;
+  -webkit-text-stroke: 0.6px #000;
+
+  &:hover {
+    background-color: hsla(155, 98%, 24%, 0.888);
+    color: hsl(0, 0%, 100%);
+    border: 2px solid transparent;
+    border-radius: 11%;
+    margin: -7% -10%;
+    }
+
+  &::after {
+    content: "";
+    margin-top: 2%;
+    width: 50px;
+    border-top: 1px solid hsla(155, 98%, 24%, 0.888);
+    border-radius: 50%;
+  }
 }
 
 .nav-toggle {
   position: fixed;
-  background-color: red;
+  background: transparent;
+  border: transparent;
   width: 2rem;
   aspect-ratio: 1;
   right: 2rem;
@@ -357,7 +371,41 @@ border-width: 0;
   z-index: 666;
 }
 
+.burger {
+  fill: hsla(155, 98%, 24%, 1);
+}
 
+.burger-line {
+  transition:
+  y 100ms ease-in 300ms,
+  rotate 100ms ease-in 300ms,
+  fill 100ms ease-in-out 300ms,
+  opacity 0ms 300ms;
+  ;
+  transform-origin: center;
+}
+
+.nav-toggle[aria-expanded="true"] {
+
+  .burger {
+  fill: hsl(0, 0%, 100%);
+  .burger-line-top, .burger-line-bottom {
+    y: 45;
+  }
+
+.burger-line-top {
+  rotate: 45deg;
+}
+
+.burger-line-middle {
+  opacity: 0;
+}
+
+.burger-line-bottom {
+  rotate: -45deg;
+}
+  }
+}
 
 /* HEADER */
 #header {
@@ -925,14 +973,6 @@ input {
   }
 }
 
-/* MOBILE M-L (375px - 425px) */
-
-@media only screen and (min-width: 426px) {
-  .bars {
-    display: none;
-  }
-}
-
 /* TABLETS and wider screens (MIN WIDTH: 768px) */
 
 @media only screen and (min-width: 768px) {
@@ -956,6 +996,12 @@ input {
     background: transparent;
     border: none;
     backdrop-filter: none;
+    justify-content: center;
+  }
+
+  .top-navigation[data-visible="false"],
+  .top-navigation[data-visible="true"] {
+    transform: none;
   }
 
   .nav-list {
@@ -964,6 +1010,7 @@ input {
     background: transparent;
     justify-content: center;
     gap: 1rem;
+    margin-top: 0;
   }
 
   .nav-link {
@@ -972,15 +1019,23 @@ input {
     text-align: center;
     padding: 0.625rem 0.75rem;
     gap: 0.625rem;
-    color: #344563;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 133%;
 
     a {
       transition: all 0.4s ease-in;
+      letter-spacing: 0.166rem;
+      transition: all 500ms ease-out;
+      -webkit-text-stroke: inherit;
+      color: #344563;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 133%;
+      letter-spacing: normal;
+
+      &::after {
+        display: none;
+      }
 
       &:hover {
         transform: scale(1.1);
