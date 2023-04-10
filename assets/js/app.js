@@ -20,7 +20,10 @@ function toggleBurger () {
 };
 
 wrapper.addEventListener("click", () => {
-  toggleBurger();
+  const visibility = topNav.getAttribute('data-visible');
+  if (visibility == 'true') {
+    toggleBurger();
+  }
 })
 
 navToggle.addEventListener("click", () => {
