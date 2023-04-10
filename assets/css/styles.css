@@ -260,20 +260,21 @@ main {
 }
 
 .top-navigation {
-  height: fit-content;
   display: flex;
   flex-direction: column;
   min-height: 5.75rem;
   padding: 3em 0;
   position: fixed;
-  background: hsla(228, 7.5%, 13.1%, 0.4);
-  inset: 0 0 0 65%;
-  backdrop-filter: blur(0.1rem);
-  border: 1px solid transparent;
+  background: hsl(0,0,100%);
+  border: 1px solid;
   border-radius: 8px;
   z-index: 444;
   margin: 1rem 1rem 0 0;
   transition: transform 800ms ease-in-out;
+  height: 100svh;
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }
 
 .top-navigation[data-visible=false] {
@@ -284,12 +285,6 @@ main {
   transform: translatex(0%);
 }
 
-@supports (backdrop-filter: blur(0.5rem)) {
-  .top-navigation {
-    background: hsla(228, 7.5%, 13.1%, 0.4);
-    backdrop-filter: blur(0.2rem);
-  }
-}
 .nav-list {
   display: flex;
   flex-direction: column;
@@ -301,28 +296,24 @@ main {
 .nav-link a {
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-weight: 600;
   font-size: clamp(0.7rem, 4vw, 1.4rem);
-  color: #fff;
-  font-family: "Poppins", sans-serif;
+  color: #3a4a42;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
   letter-spacing: 0.166rem;
   transition: all 500ms ease-out;
-  -webkit-text-stroke: 0.6px #000;
 }
+
 .nav-link a:hover {
   background-color: hsla(155, 98%, 24%, 0.888);
   color: hsl(0, 0%, 100%);
   border: 2px solid transparent;
   border-radius: 11%;
   margin: -7% -10%;
-}
-.nav-link a::after {
-  content: "";
-  margin-top: 2%;
-  width: 50px;
-  border-top: 1px solid hsla(155, 98%, 24%, 0.888);
-  border-radius: 50%;
 }
 
 .nav-toggle {
