@@ -171,7 +171,7 @@ html {
 
 body {
   height: 100%;
-  background-color: white;
+  background-color: #fff;
   font-family: "Inter", sans-serif;
   font-style: normal;
   line-height: inherit;
@@ -181,10 +181,16 @@ main {
   flex: 1 1 auto;
 }
 
-.wrapper {
+#wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  transition: all 600ms ease-in-out;
+
+  &.inactive {
+    background-color: hsla(100, 100%, 0%, 0.2);
+    filter: blur(1rem);
+  }
 }
 
 .footer {
@@ -292,19 +298,23 @@ border-width: 0;
 }
 
 .top-navigation {
-  height: fit-content;
   display: flex;
   flex-direction: column;
   min-height: 5.75rem;
-  padding: 3em 0;
+  padding: 5em 3em;
   position: fixed;
   background: hsl(0,0,100%);
-  inset: 0 0 0 65%;
-  border: 1px solid transparent;
-  border-radius: 8px;
   z-index: 444;
-  margin: 1rem 1rem 0 0;
   transition: transform 800ms ease-in-out;
+  height: 95svh;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+
+  &::shadow {
+    background-color: rgba(37, 47, 137, 0.08);
+  }
 }
 
 .top-navigation[data-visible="false"] {
@@ -320,7 +330,7 @@ border-width: 0;
   flex-direction: column;
   gap: 2rem;
   margin-top: 1rem;
-  align-items: center;
+  align-items: flex-start;
  }
 
 .nav-link a {
@@ -328,43 +338,36 @@ border-width: 0;
   flex-direction: column;
   align-items: center;
   font-weight: 600;
+  padding: 1rem;
   font-size: clamp(0.7rem, 4vw, 1.4rem);
-  color: #000;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.166rem;
+font-size: 32px;
+font-weight: 600;
+line-height: 44px;
+letter-spacing: 0em;
+color: hsla(150, 12%, 26%, 1);
+
   transition: all 500ms ease-out;
-  -webkit-text-stroke: 0.6px #000;
 
   &:hover {
-    background-color: hsla(155, 98%, 24%, 0.888);
+    background-color: hsla(150, 12%, 26%, 1);
     color: hsl(0, 0%, 100%);
-    border: 2px solid transparent;
-    border-radius: 11%;
-    margin: -7% -10%;
     }
-
-  &::after {
-    content: "";
-    margin-top: 2%;
-    width: 50px;
-    border-top: 1px solid hsla(155, 98%, 24%, 0.888);
-    border-radius: 50%;
-  }
 }
 
 .nav-toggle {
   position: fixed;
   background: transparent;
   border: transparent;
-  width: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   aspect-ratio: 1;
-  right: 2rem;
-  top: 2rem;
+  right: 1.875rem;
+  top: 3rem;
   z-index: 666;
 }
 
 .burger {
-  fill: hsla(155, 98%, 24%, 1);
+  fill: hsl(100, 100, 0%);
 }
 
 .burger-line {
@@ -378,9 +381,8 @@ border-width: 0;
 }
 
 .nav-toggle[aria-expanded="true"] {
-
   .burger {
-  fill: hsl(0, 0%, 100%);
+  fill: hsla(212, 16%, 72%, 1);
   .burger-line-top, .burger-line-bottom {
     y: 45;
   }
