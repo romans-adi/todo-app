@@ -11,26 +11,22 @@
 </head>
 
 <body>
-  <nav id="nav" class="navbar top-navigation mx-10">
+  <button class="nav-toggle" aria-controls="top-navigation" aria-expanded="false">
+    <svg class="burger" viewBox="0 0 100 100">
+      <rect class="burger-line burger-line-top" width="80" height="10" x="10" y="20" rx="5"></rect>
+      <rect class="burger-line burger-line-middle" width="80" height="10" x="10" y="50" rx="5"></rect>
+      <rect class="burger-line burger-line-bottom" width="80" height="10" x="10" y="80" rx="5"></rect>
+      <span class="sr-only">Menu</span>
+    </svg>
+  </button>
+  <nav id="top-navigation" class="top-navigation" data-visible="false">
     <ul class="nav-list">
       <li class="nav-link"><a href="#works">Portfolio</a></li>
       <li class="nav-link"><a href="#about-myself">About</a></li>
       <li class="nav-link"><a href="#contacts">Contact</a></li>
     </ul>
-    <div class="bars"></div>
-    <input id="toggle" type="checkbox"></input>
-    <label for="toggle" class="burger">
-      <div class="burger-btn">
-        <div class="burger-lines">
-          <span class="burger-line line-0"></span>
-          <span class="burger-line line-1"></span>
-          <span class="burger-line line-2"></span>
-        </div>
-      </div>
-    </label>
   </nav>
-
-  <div class="wrapper">
+  <div id="wrapper" class="wrapper">
     <header id="header">
       <section class="headline">
         <h1 class="headline-heading"><span class="blue">Hey there.<br> I’m Romans.</span><br>
@@ -270,6 +266,7 @@
       </div>
     </footer>
   </div>
+  <script src="assets/js/app.js"></script>
 </body>
 
 </html>
