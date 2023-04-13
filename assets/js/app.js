@@ -178,18 +178,14 @@ const modal = document.querySelector(".modal");
 const openModalBtn = document.querySelector(".btn-open");
 const closeModalBtn = document.querySelector(".btn-close");
 const myBody = document.body;
+const modalOverlay = document.getElementById("modal-overlay");
+const techList = document.getElementsByClassName("tools-list");
 
-const openModal = function () {
-  modal.classList.remove("hidden");
-  projectCard.className = "project-card";
-  myBody.classList.add("disable-scroll");
-};
+let w = document.body.scrollWidth;
+let h = document.body.scrollHeight;
 
-const closeModal = function () {
-  modal.classList.add("hidden");
-  projectCard.className = "project-card relative";
-  myBody.classList.remove("disable-scroll");
-};
+modalOverlay.style.height = `${h}px`;
+modalOverlay.style.width = `${w}px`;
 
 const modals = document.querySelectorAll("[data-modal]");
 
@@ -198,12 +194,58 @@ modals.forEach(function (trigger) {
     event.preventDefault();
     const modal = document.getElementById(trigger.dataset.modal);
     modal.classList.add("open");
+    modal.classList.remove("hidden");
+    projectCard.className = "project-card";
+    projectCard.classList.remove("relative");
+    myBody.classList.add("disable-scroll");
+    modalOverlay.classList.remove("hidden");
     const exits = modal.querySelectorAll(".modal-exit");
     exits.forEach(function (exit) {
       closeModalBtn.addEventListener("click", function (event) {
         event.preventDefault();
+        modal.classList.add("hidden");
+        projectCard.classList.add("relative");
+        myBody.classList.remove("disable-scroll");
+        modalOverlay.classList.add("hidden");
         modal.classList.remove("open");
       });
     });
   });
 });
+
+
+// VALIDATION
+
+const emailError = document.querySelector("#email + span.error");
+
+email.addEventListener("input", (event) => {
+  // Each time the user types something, we check if the
+  // form fields are valid.
+
+  if (email.validity.valid) {
+    // In case there is an error message visible, if the field
+    // is valid, we remove the error message.
+    emailError.textContent = ""; // Reset the content of the message
+    emailError.className = "error"; // Reset the visual state of the message
+  } else {
+    // If there is still an error, show the correct error
+    showError();
+  }
+});
+
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+alert("Valid email address!");
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.text1.focus();
+return false;
+}
+}

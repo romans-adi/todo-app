@@ -26,6 +26,9 @@
       <li class="nav-link"><a href="#contacts">Contact</a></li>
     </ul>
   </nav>
+  <div id="modal-overlay" class="overlay hidden">
+    <div class="overlay-content"></div>
+    </div>
   <div id="wrapper" class="wrapper">
     <header id="header">
       <section class="headline">
@@ -131,7 +134,7 @@
             <form class="contact-form" action="https://formspree.io/f/xyyadldd" method="POST">
               <input id="username" type="text" name="full-name" maxlength="30" placeholder="Full name" required
                 aria-label="username">
-              <input id="email" name="email" type="email" placeholder="Email address" required aria-label="email">
+              <input id="email" name="email" type="email" placeholder="Email address" aria-label="email">
               <textarea name="message" id="message" maxlength="500" placeholder="Hey I’d like to connect to..." required
                 aria-label="message"></textarea>
               <button type="submit" class="btn-success btn-get-in-touch">Get in touch</button>
