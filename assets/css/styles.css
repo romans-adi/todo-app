@@ -647,9 +647,8 @@ header .headline .supporting-text {
 }
 
 .tools-list {
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .tool {
@@ -664,6 +663,7 @@ header .headline .supporting-text {
   letter-spacing: 0.03em;
   border-radius: 0.25rem;
   background-color: #d0d9d4;
+  flex: 0 1 25%;
 }
 
 .hidden {
@@ -1340,7 +1340,7 @@ input:required:focus:valid {
   }
 
   .modal p {
-    width: 200%;
+    width: 100%;
   }
 
   .overlay {
