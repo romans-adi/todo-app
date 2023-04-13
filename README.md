@@ -34,6 +34,7 @@
   <ul>
     <li><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
    <li><a href="https://www.w3.org/TR/CSS/#css">CSS</a></li>
+   <li><a href="https://www.javascript.com/">JavaScript</a></li>
   </ul>
 
 <!-- Features -->
@@ -42,8 +43,12 @@
 
   <ul>
     <li>Responsiveness</li>
-   <li>Accessibility</li>
-   <li>Best practice of HTML and CSS</li>
+    <li>Accessibility</li>
+    <li>Best practice of HTML and CSS</li>
+    <li>Dynamical elements</li>
+    <li>NextGen images</li>
+    <li>High performance and accessibility</li>
+    <li>Best practice JavaScript</li>
   </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -59,6 +64,8 @@
 <!-- VIDEO PRESENTATION -->
 
 ## :video_camera: Video Presentation <a name="video-presentation" target="_blank"></a>
+
+  :exclamation: **OUTDATED** :exclamation:
 
 - [Video Presentation](https://www.loom.com/share/5731ea4676184d028adfaab91a1379a9)
 

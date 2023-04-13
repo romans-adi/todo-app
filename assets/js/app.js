@@ -36,7 +36,7 @@ navLink.forEach((navLink) => navLink.addEventListener('click', () => {
   toggleBurger();
 }));
 
-// PROJECTS
+// CREATING OBJECT
 
 const container = document.getElementById('projects-set');
 
@@ -122,7 +122,7 @@ const projects = [
   },
 ];
 
-// warning:Unexpected unnamed function & error: Unexpected function expression
+// CREATING CARDS
 
 projects.forEach((project) => {
   const card = document.createElement('div');
