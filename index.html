@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <button class="nav-toggle" aria-controls="top-navigation" aria-expanded="false">
+  <button class="nav-toggle" type="button" aria-controls="top-navigation" aria-expanded="false">
     <svg class="burger" viewBox="0 0 100 100">
       <rect class="burger-line burger-line-top" width="80" height="10" x="10" y="20" rx="5"></rect>
       <rect class="burger-line burger-line-middle" width="80" height="10" x="10" y="50" rx="5"></rect>
@@ -26,6 +26,9 @@
       <li class="nav-link"><a href="#contacts">Contact</a></li>
     </ul>
   </nav>
+  <div id="modal-overlay" class="overlay hidden">
+    <div class="overlay-content"></div>
+    </div>
   <div id="wrapper" class="wrapper">
     <header id="header">
       <section class="headline">
@@ -56,7 +59,7 @@
         </div>
         <a class="btn-scroll-down-link" aria-label="Works" href="#works">
           <div class="btn-scroll-down">
-            <div class="chevron-down">
+            <div class="chevron-down relative">
             </div>
         </a>
       </section>
@@ -65,113 +68,11 @@
 
       <section id="works" class="works">
         <h2 class="blue section-heading works-heading">My Recent<br> Works</h2>
-        <div class="projects-set">
-          <div class="project-card">
-            <picture class="placeholder-img">
-              <source srcset="assets/img/img-placeholder.webp" />
-              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-                class="project-screenshot project-0">
-            </picture>
-            <div class="project-card-content">
-              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
-              <ul class="tools-list">
-                <li class="tool">Ruby on Rails</li>
-                <li class="tool">CSS</li>
-                <li class="tool">JavaScript</li>
-                <li class="tool">HTML</li>
-              </ul>
-              <a href="#" type="button" class="btn-success btn-see-project">See Project</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <picture class="placeholder-img">
-              <source srcset="assets/img/img-placeholder.webp" />
-              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-                class="project-screenshot project-0">
-            </picture>
-            <div class="project-card-content">
-              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
-              <ul class="tools-list">
-                <li class="tool">Ruby on Rails</li>
-                <li class="tool">CSS</li>
-                <li class="tool">JavaScript</li>
-                <li class="tool">HTML</li>
-              </ul>
-              <a href="#" type="button" class="btn-success btn-see-project">See Project</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <picture class="placeholder-img">
-              <source srcset="assets/img/img-placeholder.webp" />
-              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-                class="project-screenshot project-0">
-            </picture>
-            <div class="project-card-content">
-              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
-              <ul class="tools-list">
-                <li class="tool">Ruby on Rails</li>
-                <li class="tool">CSS</li>
-                <li class="tool">JavaScript</li>
-                <li class="tool">HTML</li>
-              </ul>
-              <a href="#" type="button" class="btn-success btn-see-project">See Project</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <picture class="placeholder-img">
-              <source srcset="assets/img/img-placeholder.webp" />
-              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-                class="project-screenshot project-0">
-            </picture>
-            <div class="project-card-content">
-              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
-              <ul class="tools-list">
-                <li class="tool">Ruby on Rails</li>
-                <li class="tool">CSS</li>
-                <li class="tool">JavaScript</li>
-                <li class="tool">HTML</li>
-              </ul>
-              <a href="#" type="button" class="btn-success btn-see-project">See Project</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <picture class="placeholder-img">
-              <source srcset="assets/img/img-placeholder.webp" />
-              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-                class="project-screenshot project-0">
-            </picture>
-            <div class="project-card-content">
-              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
-              <ul class="tools-list">
-                <li class="tool">Ruby on Rails</li>
-                <li class="tool">CSS</li>
-                <li class="tool">JavaScript</li>
-                <li class="tool">HTML</li>
-              </ul>
-              <a href="#" type="button" class="btn-success btn-see-project">See Project</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <picture class="placeholder-img">
-              <source srcset="assets/img/img-placeholder.webp" />
-              <img src="assets/img/img-placeholder.png" width="100%" alt="project-screenshot"
-                class="project-screenshot project-0">
-            </picture>
-            <div class="project-card-content">
-              <h3 class="project-card-heading">Multi-Post Stories Gain+Glory</h3>
-              <ul class="tools-list">
-                <li class="tool">Ruby on Rails</li>
-                <li class="tool">CSS</li>
-                <li class="tool">JavaScript</li>
-                <li class="tool">HTML</li>
-              </ul>
-              <a href="#" type="button" class="btn-success btn-see-project">See Project</a>
-            </div>
-          </div>
+        <div id="projects-set" class="projects-set"></div>
       </section>
 
       <section id="about-myself" class="about-myself">
-        <div class="about-myself-content">
+        <div class="about-myself-content relative">
           <h2 class="blue section-heading about-heading">About me</h2>
           <div class="about-myself-text blue">
             <p> I can help you build a product , feature or website Look through some of my work and experience! If you
@@ -225,15 +126,15 @@
             </ul>
           </div>
         </div>
-        <section class="contacts" id="contacts">
-          <div class="container">
+        <section class="contacts relative" id="contacts">
+          <div class="container-form">
             <h3 class="contact-heading">
               I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h3>
             <form class="contact-form" action="https://formspree.io/f/xyyadldd" method="POST">
               <input id="username" type="text" name="full-name" maxlength="30" placeholder="Full name" required
                 aria-label="username">
-              <input id="email" name="email" type="email" placeholder="Email address" required aria-label="email">
+              <input id="email" name="email" type="email" placeholder="Email address" aria-label="email">
               <textarea name="message" id="message" maxlength="500" placeholder="Hey I’d like to connect to..." required
                 aria-label="message"></textarea>
               <button type="submit" class="btn-success btn-get-in-touch">Get in touch</button>
