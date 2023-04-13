@@ -48,9 +48,11 @@ const projects = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     mobileImg: 'assets/img/modal-illustration.png',
     desktopImg: 'assets/img/modal-bg-desktop.png',
+    mobileImgWebP: 'assets/img/modal-illustration.webp',
+    desktopImgWebP: 'assets/img/modal-bg-desktop.webp',
     technologies: ['CSS', 'JavaScript', 'HTML'],
     liveVersion: 'https://romans-adi.github.io/',
-    source: '#',
+    source: 'https://github.com/romans-adi/romans-adi.github.io',
   },
 
   {
@@ -60,6 +62,8 @@ const projects = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     mobileImg: 'assets/img/modal-illustration.png',
     desktopImg: 'assets/img/modal-bg-desktop.png',
+    mobileImgWebP: 'assets/img/modal-illustration.webp',
+    desktopImgWebP: 'assets/img/modal-bg-desktop.webp',
     technologies: ['Ruby on Rail', 'CSS', 'JavaScript', 'HTML'],
     liveVersion: '#',
     source: '#',
@@ -71,6 +75,8 @@ const projects = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     mobileImg: 'assets/img/modal-illustration.png',
     desktopImg: 'assets/img/modal-bg-desktop.png',
+    mobileImgWebP: 'assets/img/modal-illustration.webp',
+    desktopImgWebP: 'assets/img/modal-bg-desktop.webp',
     technologies: ['Ruby on Rail', 'CSS', 'JavaScript', 'HTML'],
     liveVersion: '#',
     source: '#',
@@ -82,6 +88,8 @@ const projects = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     mobileImg: 'assets/img/modal-illustration.png',
     desktopImg: 'assets/img/modal-bg-desktop.png',
+    mobileImgWebP: 'assets/img/modal-illustration.webp',
+    desktopImgWebP: 'assets/img/modal-bg-desktop.webp',
     technologies: ['Ruby on Rail', 'CSS', 'JavaScript', 'HTML'],
     liveVersion: '#',
     source: '#',
@@ -93,6 +101,8 @@ const projects = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     mobileImg: 'assets/img/modal-illustration.png',
     desktopImg: 'assets/img/modal-bg-desktop.png',
+    mobileImgWebP: 'assets/img/modal-illustration.webp',
+    desktopImgWebP: 'assets/img/modal-bg-desktop.webp',
     technologies: ['Ruby on Rail', 'CSS', 'JavaScript', 'HTML'],
     liveVersion: '#',
     source: '#',
@@ -104,6 +114,8 @@ const projects = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     mobileImg: 'assets/img/modal-illustration.png',
     desktopImg: 'assets/img/modal-bg-desktop.png',
+    mobileImgWebP: 'assets/img/modal-illustration.webp',
+    desktopImgWebP: 'assets/img/modal-bg-desktop.webp',
     technologies: ['Ruby on Rail', 'CSS', 'JavaScript', 'HTML'],
     liveVersion: '#',
     source: '#',
@@ -112,13 +124,14 @@ const projects = [
 
 // warning:Unexpected unnamed function & error: Unexpected function expression
 
-projects.forEach(function (project) {
+projects.forEach((project) => {
   const card = document.createElement('div');
   card.classList = 'project-card';
   const content = `
 <div class="project-card relative" id="${project.id}">
 <picture class="placeholder-img">
-<source srcset="${project.mobileImg}" />
+<source srcset="${project.mobileImgWebP}" type="image/webp" />
+<source srcset="${project.mobileImg}" type="image/png" />
 <img src="${project.mobileImg}" width="100%" alt="project-screenshot"
   class="project-screenshot project-0">
 </picture>
@@ -145,22 +158,24 @@ ${project.technologies.map((tool) => `<li class="tool">${tool}</li>`).join('')}
 </div>
 <div class="modal-main-layout">
 <div class="top">
- <h3 class="modal-heading blue">${project["prName"]}</h3>
+ <h3 class="modal-heading blue">${project.prName}</h3>
    <ul class="tools-list">
-   ${project['technologies'].map((tool) => `<li class="tool">${tool}</li>`).join('')}
+   ${project.technologies.map((tool) => `<li class="tool">${tool}</li>`).join('')}
    </ul></div>
  <p>
- ${project["description"]}
+ ${project.description}
 </p>
 <p>
-${project["description"]}
+${project.description}
  </p>
  <div class="bottom">
  <div class="modal-btn-group">
- <a href="${project['liveVersion']} "target=_blank">
+ <a href="${project.liveVersion} "target=_blank">
  <button type="button" class="btn-success btn-success-modal see-live">See Live</button>
  </a>
+ <a href="${project.source} "target=_blank">
  <button type="button" class="btn-success btn-success-modal source">See Source</button>
+ </a>
  </div>
  </div>
  </div>
@@ -179,13 +194,8 @@ const myBody = document.body;
 const modalOverlay = document.getElementById('modal-overlay');
 const modals = document.querySelectorAll('[data-modal]');
 
-// warning:Unexpected unnamed function & error: Unexpected function expression
-
-modals.forEach(function (trigger) {
-
-// warning:Unexpected unnamed function
-
-  trigger.addEventListener('click', function (event) {
+modals.forEach((trigger) => {
+  trigger.addEventListener('click', (event) => {
     event.preventDefault();
     const modal = document.getElementById(trigger.dataset.modal);
     modal.classList.add('open');
@@ -194,19 +204,13 @@ modals.forEach(function (trigger) {
     projectCard.classList.remove('relative');
     myBody.classList.add('disable-scroll');
     modalOverlay.classList.remove('hidden');
-    const exits = modal.querySelectorAll('.modal-exit');
-
-// warning:Unexpected unnamed function
-
-    exits.forEach(function (exit) {
-      closeModalBtn.addEventListener('click', function (event) {
-        event.preventDefault();
-        modal.classList.add('hidden');
-        projectCard.classList.add('relative');
-        myBody.classList.remove('disable-scroll');
-        modalOverlay.classList.add('hidden');
-        modal.classList.remove('open');
-      });
+    closeModalBtn.addEventListener('click', (event) => {
+      event.preventDefault();
+      modal.classList.add('hidden');
+      projectCard.classList.add('relative');
+      myBody.classList.remove('disable-scroll');
+      modalOverlay.classList.add('hidden');
+      modal.classList.remove('open');
     });
   });
 });
