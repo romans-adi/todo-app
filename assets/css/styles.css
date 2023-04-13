@@ -273,7 +273,10 @@ main {
 }
 
 .modal-main-layout {
-  display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .modal-secondary-layout {
@@ -621,6 +624,8 @@ header .headline .supporting-text {
 
 .project-card-content {
   display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -649,6 +654,7 @@ header .headline .supporting-text {
 .tools-list {
   display: flex;
   justify-content: space-evenly;
+  gap: 1rem;
 }
 
 .tool {
@@ -704,6 +710,8 @@ header .headline .supporting-text {
 
 .modal .tools-list {
   width: 100%;
+  margin-top: 3%;
+  justify-content: flex-start;
 }
 
 .modal p {
@@ -746,8 +754,9 @@ header .headline .supporting-text {
   padding: 3%;
   overflow-y: auto;
   background: #fff;
-  height: auto;
+  height: 100vh;
   width: 100%;
+  max-width: 950px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -788,7 +797,8 @@ header .headline .supporting-text {
 }
 
 .modal-btn-group button.source {
-  width: 156px;
+  display: flex;
+  min-width: 156px;
   height: 48px;
 }
 
@@ -1303,7 +1313,6 @@ input:required:focus:valid {
   }
 
   .project-card {
-    height: 100%;
     margin: 1%;
     min-width: 23.063rem;
     transition: all 1s ease-in-out;
@@ -1322,9 +1331,10 @@ input:required:focus:valid {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60vw;
+    width: 80vw;
     padding: 3%;
-    height: 100vh;
+    height: 90vh;
+    max-width: 872px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1337,10 +1347,6 @@ input:required:focus:valid {
 
   .modal-container {
     padding: 5%;
-  }
-
-  .modal p {
-    width: 100%;
   }
 
   .overlay {
@@ -1369,13 +1375,6 @@ input:required:focus:valid {
     display: none;
   }
 
-  .modal-main-layout {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
   .modal-secondary-layout {
     display: flex;
     flex-direction: column;
@@ -1386,6 +1385,7 @@ input:required:focus:valid {
     width: 100%;
     gap: 2rem;
     margin-top: 1%;
+    justify-content: flex-end;
   }
 
   .btn-close {
@@ -1533,10 +1533,6 @@ input:required:focus:valid {
 @media only screen and (min-width: 1200px) {
   .projects-set {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .modal p {
-    width: 150%;
   }
 
   .modal-flex-wrap {

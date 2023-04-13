@@ -110,7 +110,7 @@ const projects = [
   },
 ];
 
-// warning:Unexpected unnamed function & error: Unexpected function expression  
+// warning:Unexpected unnamed function & error: Unexpected function expression
 
 projects.forEach(function (project) {
   const card = document.createElement('div');
@@ -143,24 +143,25 @@ ${project.technologies.map((tool) => `<li class="tool">${tool}</li>`).join('')}
 <img class="modal-mobile-img" src="${project.mobileImg}" alt="modal-illustration">
 <img class="modal-desktop-img"  src="${project.desktopImg}" alt="modal-illustration">
 </div>
-<div class="modal-main-layout modal-flex-wrap">
-<div class=modal-secondary-layout>
- <h3 class="modal-heading blue">${project.prName}</h3>
+<div class="modal-main-layout">
+<div class="top">
+ <h3 class="modal-heading blue">${project["prName"]}</h3>
    <ul class="tools-list">
-   ${project.technologies.map((tool) => `<li class="tool">${tool}</li>`).join('')}
-   </ul>
+   ${project['technologies'].map((tool) => `<li class="tool">${tool}</li>`).join('')}
+   </ul></div>
  <p>
- ${project.description}
+ ${project["description"]}
 </p>
 <p>
-${project.description}
+${project["description"]}
  </p>
- </div>
+ <div class="bottom">
  <div class="modal-btn-group">
- <a href="${project.liveVersion} "target=_blank">
+ <a href="${project['liveVersion']} "target=_blank">
  <button type="button" class="btn-success btn-success-modal see-live">See Live</button>
  </a>
  <button type="button" class="btn-success btn-success-modal source">See Source</button>
+ </div>
  </div>
  </div>
           </div>
@@ -178,7 +179,7 @@ const myBody = document.body;
 const modalOverlay = document.getElementById('modal-overlay');
 const modals = document.querySelectorAll('[data-modal]');
 
-// warning:Unexpected unnamed function & error: Unexpected function expression  
+// warning:Unexpected unnamed function & error: Unexpected function expression
 
 modals.forEach(function (trigger) {
 
