@@ -4,6 +4,8 @@ const topNav = document.querySelector('.top-navigation');
 const navToggle = document.querySelector('.nav-toggle');
 const navLink = document.querySelectorAll('.nav-link');
 const wrapper = document.getElementById('wrapper');
+const burgerLineTop = document.querySelector('.burger-line-top');
+const burgerLineBottom = document.querySelector('.burger-line-bottom');
 
 function toggleBurger() {
   const width = window.innerWidth;
@@ -13,11 +15,15 @@ function toggleBurger() {
     topNav.setAttribute('data-visible', true);
     topNav.setAttribute('aria-expanded', true);
     wrapper.className = 'wrapper inactive';
+    burgerLineBottom.style.y = ('45');
+    burgerLineTop.style.y = ('45');
   } else if (visibility === 'true') {
     navToggle.setAttribute('aria-expanded', false);
     topNav.setAttribute('data-visible', false);
     topNav.setAttribute('aria-expanded', false);
     wrapper.className = 'wrapper';
+    burgerLineBottom.style.y = ('20');
+    burgerLineTop.style.y = ('80');
   }
 }
 

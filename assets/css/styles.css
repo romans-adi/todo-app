@@ -1,59 +1,6 @@
 /* FONTS */
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format("truetype");
-}
 
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9V1s.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6V1s.ttf) format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
 
 /* ANIMATIONS */
 @-webkit-keyframes bounce-top {
@@ -369,7 +316,7 @@ main {
   margin: 5% 0;
   padding: 0 10%;
   font-weight: 700;
-  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-size: 2.6rem;
   line-height: 130%;
   text-align: center;
 }
@@ -416,7 +363,6 @@ main {
   align-items: center;
   font-weight: 600;
   padding: 1rem;
-  font-size: clamp(0.7rem, 4vw, 1.4rem);
   font-size: 32px;
   line-height: 44px;
   color: #3a4a42;
@@ -434,7 +380,7 @@ main {
   border: transparent;
   width: 2.5rem;
   height: 2.5rem;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   right: 1.875rem;
   top: 3rem;
   z-index: 666;
@@ -451,11 +397,6 @@ main {
 
 .nav-toggle[aria-expanded=true] .burger {
   fill: #acb7c3;
-}
-
-.nav-toggle[aria-expanded=true] .burger .burger-line-top,
-.nav-toggle[aria-expanded=true] .burger .burger-line-bottom {
-  y: 45;
 }
 
 .nav-toggle[aria-expanded=true] .burger .burger-line-top {
@@ -504,7 +445,7 @@ main {
 header .headline .supporting-text {
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-size: 1.16rem;
   line-height: 140%;
   text-align: center;
 }
