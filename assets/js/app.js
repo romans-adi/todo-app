@@ -220,3 +220,70 @@ modals.forEach((trigger) => {
     });
   });
 });
+
+// VALIDATION
+
+const form = document.getElementById('contact-form');
+
+function switchErrorColor(variable) {
+  if (variable.classList.contains('transparent')) {
+    variable.classList.remove('transparent');
+    variable.classList.add('red');
+  }
+}
+
+form.addEventListener('input', () => {
+  const email = document.getElementById('email').value;
+  const emailInput = document.getElementById('email');
+  const regex = /^[a-z]+@[a-z0-9-]+\.[a-z]{2,3}$/g;
+  if (email.match(regex)) {
+    emailInput.classList.add('valid-input');
+  } else {
+    emailInput.classList.remove('valid-input');
+  }
+});
+
+form.addEventListener('submit', (e) => {
+  const errorMessage = document.querySelector('.error');
+  const email = document.getElementById('email').value;
+  const regex = /^[a-z]+@[a-z0-9-]+\.[a-z]{2,3}$/g;
+  if (!email.match(regex)) {
+    switchErrorColor(errorMessage);
+    e.preventDefault();
+  }
+  return true;
+});
+
+const nameInput = document.querySelector('#username');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
+
+const formData = JSON.parse(localStorage.getItem('formData')) || {};
+
+if (formData.name) {
+  nameInput.value = formData.name;
+}
+
+if (formData.email) {
+  emailInput.value = formData.email;
+}
+
+if (formData.comments) {
+  messageInput.value = formData.message;
+}
+
+form.addEventListener('input', (event) => {
+  formData[event.target.name] = event.target.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+const savedData = JSON.parse(localStorage.getItem('formData'));
+if (savedData) {
+  emailInput.value = savedData.email;
+  messageInput.value = savedData.message;
+  nameInput.value = savedData.username;
+}
+
+form.addEventListener('submit', () => {
+  localStorage.clear();
+});
