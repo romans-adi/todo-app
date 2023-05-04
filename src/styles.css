@@ -27,28 +27,27 @@ body {
 
 body {
   font-family: 'Open Sans', sans-serif;
-    background: #f1f2f5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #777;
+  background: #f1f2f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #777;
 }
 
 /* LIST */
 
 .container {
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-    overflow: hidden;
-    border-radius: 3px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
-    margin: 0 auto;
-    top: 0px;
-    width: 500px;
-    transition: transform 0.5s ease;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  top: 0;
+  width: 500px;
+  transition: transform 0.5s ease;
 }
 
 .container:hover {
@@ -66,7 +65,7 @@ body {
 
 .tasks li {
   justify-content: space-between;
-    display: flex;
+  display: flex;
   width: 100%;
   padding: 1rem 0 1rem 1rem;
   border-top: 1px solid #f1f2f5;
@@ -117,7 +116,7 @@ body {
 }
 
 .add-task::placeholder {
-font-style: italic;
+  font-style: italic;
 }
 
 .icon-return {
@@ -134,16 +133,12 @@ font-style: italic;
 
 .checkbox {
   display: inline-block;
-  width: 20px;
+  width: 15px;
   height: 20px;
   background-color: transparent;
   margin-right: 10px;
   border: none;
   outline: none;
-}
-
-li input[type=checkbox]:checked {
-  accent-color: #fff;
 }
 
 input[type="checkbox"]:checked::after {
@@ -173,8 +168,8 @@ li input[type=checkbox]:checked + span {
 /* CLEAR BUTTON */
 
 .clear-btn-container {
-background-color: #f1f2f5;
-cursor: pointer;
+  background-color: #f1f2f5;
+  cursor: pointer;
 }
 
 .clear-btn {
