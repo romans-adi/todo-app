@@ -68,8 +68,10 @@ class TodoList {
     inputField.placeholder = 'Add to your list';
     inputField.addEventListener('keydown', (event) => {
       if (event.key === 'Enter' && inputField.value.trim() !== '') {
-        this.add(inputField.value.trim());
-        inputField.value = '';
+        if (inputField.value !== '') {
+          this.add(inputField.value.trim());
+          inputField.value = '';
+        }
       }
     });
 
@@ -85,11 +87,12 @@ class TodoList {
     addListInput.appendChild(inputField);
     addListInput.appendChild(addBtn);
     listContainer.appendChild(addListInput);
-
     addBtn.addEventListener('click', () => {
-      this.add((inputField.value.trim()));
-      this.saveTasksToStorage();
-      this.render();
+      if (inputField.value !== '') {
+        this.add((inputField.value.trim()));
+        this.saveTasksToStorage();
+        this.render();
+      }
     });
 
     // Creating li element

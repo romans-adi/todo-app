@@ -94,12 +94,11 @@ body {
 
 .icon-refresh {
   outline: none;
-  background-color: #fff;
   border: none;
   display: flex;
   width: 20px;
   height: auto;
-  background: url('icon-refresh.png') no-repeat center;
+  background: #fff url('icon-refresh.png') no-repeat center;
   background-size: contain;
 }
 
@@ -121,12 +120,11 @@ body {
 
 .icon-return {
   outline: none;
-  background-color: #fff;
   border: none;
   display: inline-block;
   width: 20px;
   height: auto;
-  background: url('icon-return.png') no-repeat bottom;
+  background: #fff url('icon-return.png') no-repeat bottom;
 }
 
 /* CHECKBOX */
