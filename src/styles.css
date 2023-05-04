@@ -1,3 +1,7 @@
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
 /* RESET */
 
 *,
@@ -22,11 +26,12 @@ body {
 }
 
 body {
-  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
     background: #f1f2f5;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #777;
 }
 
 /* LIST */
@@ -37,22 +42,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-    min-width: 60%;
     overflow: hidden;
     border-radius: 3px;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
     margin: 0 auto;
     top: 0px;
+    width: 500px;
+    transition: transform 0.5s ease;
 }
 
-.link-button {
-  appearance: none;
-  outline: none;
-  border: none;
-  background-color: transparent;
-  margin: 1rem auto;
-  display: block;
-  color: #666;
+.container:hover {
+  transform: translateY(-10px);
 }
 
 .tasks {
@@ -60,53 +60,106 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
+  color: #444;
   width: 100%;
-}
-
-.checkbox {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border: 2px solid #f1f2f5;
-  margin-right: 10px;
-}
-.checkbox::after {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 5px;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  margin: 4px 0 0 5px;
-  visibility: hidden;
 }
 
 .tasks li {
   justify-content: space-between;
     display: flex;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0 1rem 1rem;
   border-top: 1px solid #f1f2f5;
 }
 
-.tasks li:first-child,
+.tasks li:nth-child(2),
 .tasks li:last-child {
   padding: 0;
 }
 
-.clear-btn-container {
-background-color: #f1f2f5;
+.tasks li:first-child {
+  padding-right: 1rem;
 }
 
-.clear-btn {
+.tasks li:nth-child(2) {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+/* TO DO LIST HEADING */
+
+.heading {
+  padding: 10px;
+}
+
+.icon-refresh {
+  outline: none;
+  background-color: #fff;
+  border: none;
+  display: flex;
+  width: 20px;
+  height: auto;
+  background: url('icon-refresh.png') no-repeat center;
+  background-size: contain;
+}
+
+/* ADD INPUT FIELD */
+
+.add-task {
+  font-size: 16px;
+  line-height: 50px;
   width: 100%;
-  background-color: #f1f2f5;
   outline: none;
   border: none;
-  margin: 1rem auto;
+  padding: 0 40px 0 1rem;
+  height: 50px;
 }
+
+.add-task::placeholder {
+font-style: italic;
+}
+
+.icon-return {
+  outline: none;
+  background-color: #fff;
+  border: none;
+  display: inline-block;
+  width: 20px;
+  height: auto;
+  background: url('icon-return.png') no-repeat bottom;
+}
+
+/* CHECKBOX */
+
+.checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+}
+
+li input[type=checkbox]:checked {
+  accent-color: #fff;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "\2713";
+  font-size: 20px;
+  font-weight: bold;
+  color: #2e8ae6;
+  background-color: #fff;
+}
+
+li input[type=checkbox]:checked + span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* DOTS */
 
 .dots {
   display: inline-block;
@@ -117,17 +170,18 @@ background-color: #f1f2f5;
   background-repeat: no-repeat;
 }
 
-.add-task {
-  font-style: italic;
-  width: 100%;
-  outline: none;
-  border: none;
-  padding: 1rem 0.5rem;
+/* CLEAR BUTTON */
+
+.clear-btn-container {
+background-color: #f1f2f5;
+cursor: pointer;
 }
 
-.add-task::placeholder {
-  font-size: 16px;
-  padding: 0 40px 0 1rem;
-    line-height: 50px;
-    height: 50px;
+.clear-btn {
+  width: 100%;
+  cursor: pointer;
+  background-color: #f1f2f5;
+  outline: none;
+  border: none;
+  margin: 1rem auto;
 }
