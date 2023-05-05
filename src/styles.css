@@ -148,6 +148,20 @@ li input[type=checkbox]:checked + span {
   color: #888;
 }
 
+/* DESCRIPTION TEXT */
+
+textarea {
+  width: 100%;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
 /* DOTS */
 
 .dots {
@@ -173,16 +187,4 @@ li input[type=checkbox]:checked + span {
   outline: none;
   border: none;
   margin: 1rem auto;
-}
-
-textarea {
-  width: 100%;
-  resize: none;
-  outline: none;
-  border: none;
-}
-
-.completed {
-  text-decoration: line-through;
-  color: #999;
 }
