@@ -20,8 +20,8 @@ class TodoList {
   }
 
   displayList() {
-    render();
-  };
+    this.render();
+  }
 }
 
 export default TodoList;
