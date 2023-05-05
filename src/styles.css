@@ -162,6 +162,24 @@ textarea {
   color: #999;
 }
 
+/* REMOVE BUTTON */
+
+.remove-task {
+  outline: none;
+  border: none;
+  display: flex;
+  width: 20px;
+  height: auto;
+  background: #fff url('iconmonstr-trash-can-1.svg') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
 /* DOTS */
 
 .dots {

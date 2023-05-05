@@ -16,11 +16,11 @@ class TodoList {
   }
 
   remove(index) {
-    removeTask(this.tasks, index);
+    removeTask(this, index);
   }
 
   displayList() {
-    this.render();
+    render(this);
   }
 }
 
