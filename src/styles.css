@@ -44,9 +44,8 @@ body {
   overflow: hidden;
   border-radius: 3px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  margin: 0 auto;
+  margin: 0 5%;
   top: 0;
-  width: 500px;
   transition: transform 0.5s ease;
 }
 
@@ -216,4 +215,11 @@ textarea {
   outline: none;
   border: none;
   margin: 1rem auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+}
 }
