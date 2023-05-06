@@ -4,7 +4,7 @@
 
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 To Do List](#-to-do-list)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
@@ -25,7 +25,7 @@
 
 # 📖 <a name="about-project">To Do List</a>
 
-Simple To Do List single-page application (SPA) that allows user to add and/or remove tasks to/from list. Only one class with defined methods used. All data stored in local storage.
+Simple To Do List single-page application (SPA) that allows user to add and/or remove tasks to/from the list. Only one class with defined methods used. All data stored in local storage. Project is based on modular JS and ES6 syntax & features.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,7 +47,7 @@ Simple To Do List single-page application (SPA) that allows user to add and/or r
   <li>Based on JavaScript classes and methods</li>
   <li>Data is preserved in the browser's memory by using local storage</li>
   <li>Modular JavaScript</li>
-  <li>Organized with a Webpack bundler</li>
+  <li>Built with a Webpack bundler</li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -62,7 +62,8 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-Clone the project using terminal on your local machine. After succefull cloning you can open it in any text editor of your choice.
+Clone the project using a terminal on your local machine. After successful cloning you can open it in any text editor of your choice.
+You can also run this project using CLI. Make sure you have node package manager installed on your machine, and then run 'npm start' to start this app in your default browser.
 
 ### Setup
 
@@ -74,35 +75,21 @@ Clone the project using one of the options.
 
 Using SSH-key:
 
-> git clone git@github.com:romans-adi/AwesomeBooksES6.git
+> git clone git@github.com:romans-adi/To-Do-List.git
 
 Using HTTPS:
 
-> git clone https://github.com/romans-adi/AwesomeBooksES6.git
+> git clone https://github.com/romans-adi/To-Do-List.git
 
 You can also create the new directory just adding the name of it in the end of command. For example:
 
-> git clone https://github.com/romans-adi/AwesomeBooksES6.git awesomeBooksES6
+> git clone https://github.com/romans-adi/To-Do-List.git to-do-list
 
 ### Usage
 
 To run the project, execute the following command:
 
-Linux:
-
-> xdg-open index.html
-
-Windows:
-
-> start index.html
-
-MacOS:
-
-> open index.html
-
-Cygwin:
-
-> cygstart index.html
+> npm start
 
 ### Deployment
 
@@ -129,7 +116,6 @@ You can deploy this project using:
 ### Future Features <a name="future-features"></a>
 
 - **Add more styles**
-- **Add more properties/additional information to the Task objects**
 - **Rearrange project to MVC patters**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

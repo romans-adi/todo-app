@@ -50,10 +50,6 @@ body {
   transition: transform 0.5s ease;
 }
 
-.container:hover {
-  transform: translateY(-10px);
-}
-
 .tasks {
   display: flex;
   flex-direction: column;
@@ -150,6 +146,38 @@ input[type="checkbox"]:checked::after {
 li input[type=checkbox]:checked + span {
   text-decoration: line-through;
   color: #888;
+}
+
+/* DESCRIPTION TEXT */
+
+textarea {
+  width: 100%;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* REMOVE BUTTON */
+
+.remove-task {
+  outline: none;
+  border: none;
+  display: flex;
+  width: 20px;
+  height: auto;
+  background: #fff url('icon-trash.svg') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.hidden {
+  display: none;
 }
 
 /* DOTS */
