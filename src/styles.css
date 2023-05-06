@@ -34,6 +34,10 @@ body {
   color: #777;
 }
 
+p {
+  visibility: hidden;
+}
+
 /* LIST */
 
 .container {
