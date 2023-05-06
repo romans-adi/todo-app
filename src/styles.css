@@ -94,8 +94,19 @@ body {
   display: flex;
   width: 20px;
   height: auto;
+  opacity: 0.7;
   background: #fff url('icon-refresh.png') no-repeat center;
   background-size: contain;
+  transition: transform 2s;
+}
+
+.icon-refresh:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(360deg);
 }
 
 /* ADD INPUT FIELD */
