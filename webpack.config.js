@@ -13,7 +13,7 @@ const stylesHandler = isProduction
 const config = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -48,7 +48,7 @@ const config = {
 
   devServer: {
     static: {
-      directory: path.join(__dirname, 'docs'),
+      directory: path.join(__dirname, 'dist'),
     },
     compress: true,
     port: 8080,
