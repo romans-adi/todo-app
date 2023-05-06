@@ -2,6 +2,7 @@ import { getTasks } from './storage.js';
 import render from './render.js';
 import addTask from './add.js';
 import removeTask from './remove.js';
+import clearCompletedTasks from './clearChecked.js';
 
 class TodoList {
   constructor(listContainer) {
