@@ -9,6 +9,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -49,6 +50,14 @@ Simple To Do List single-page application (SPA) that allows user to add and/or r
   <li>Modular JavaScript</li>
   <li>Built with a Webpack bundler</li>
 </ul>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo" target="_blank"></a>
+
+- [Online version of my project](https://romans-adi.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,7 +102,7 @@ To run the project, execute the following command:
 
 ### Deployment
 
-You can deploy this project using:
+This page is deployed using GitHub Pages:
 
 - [GitHub Pages](https://pages.github.com/)
 

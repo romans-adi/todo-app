@@ -3,9 +3,5 @@ export function setTasks(tasks) {
 }
 
 export function getTasks() {
-  const tasksString = localStorage.getItem('tasks');
-  if (tasksString) {
-    return JSON.parse(tasksString);
-  }
-  return [];
+return localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : [];
 }
