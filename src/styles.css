@@ -170,7 +170,7 @@ textarea {
   display: flex;
   width: 20px;
   height: auto;
-  background: #fff url('iconmonstr-trash-can-1.svg') no-repeat center;
+  background: #fff url('icon-trash.svg') no-repeat center;
   background-size: contain;
   cursor: pointer;
   transition: all 200ms ease-in-out;

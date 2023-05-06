@@ -65,12 +65,6 @@ const render = () => {
     const checkbox = document.createElement('input');
     checkbox.classList.add('checkbox');
     checkbox.type = 'checkbox';
-    // checkbox.checked = task.completed;
-    // checkbox.addEventListener('change', (event) => {
-    //   task.completed = event.target.checked;
-    //   setTasks(tasks);
-    //   render(tasks);
-    // });
     listItem.appendChild(checkbox);
 
     // Remove Button
@@ -124,14 +118,6 @@ const render = () => {
   const clearButton = document.createElement('button');
   clearButton.classList.add('clear-btn');
   clearButton.textContent = 'Clear completed tasks';
-  // clearButton.addEventListener('click', () => {
-  //   tasks = tasks.filter((task) => !task.completed);
-  //   tasks.forEach((task, index) => {
-  //     task.index = index + 1;
-  //   });
-  //   setTasks(tasks);
-  //   render(tasks);
-  // });
   const lastListItem = document.createElement('li');
   lastListItem.classList.add('clear-btn-container');
   lastListItem.appendChild(clearButton);
