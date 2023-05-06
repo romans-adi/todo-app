@@ -1,7 +1,7 @@
 {
-  "name": "my-webpack-project",
+  "name": "to-do-list",
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "A simple SPA To-Do list project",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,8 +12,8 @@
     "start": "webpack serve --open"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Romans Spilaks",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.5",
     "@babel/preset-env": "^7.20.2",
