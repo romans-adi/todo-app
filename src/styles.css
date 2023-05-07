@@ -233,6 +233,7 @@ textarea {
   cursor: pointer;
   position: relative;
   transition: all 0.8s ease;
+  overflow: hidden;
 }
 
 .clear-btn {
