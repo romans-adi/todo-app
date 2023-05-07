@@ -57,7 +57,7 @@ Simple To Do List single-page application (SPA) that allows user to add and/or r
 
 ## 🚀 Live Demo <a name="live-demo" target="_blank"></a>
 
-- [Online version of my project](https://romans-adi.github.io/dist)
+- [Online version of my project](https://romans-adi.github.io/todo-app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
