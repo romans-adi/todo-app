@@ -74,7 +74,7 @@ textarea {
   align-items: center;
   background-color: var(--light-grey);
   width: 100%;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .tasks li {
@@ -275,6 +275,6 @@ textarea {
   }
 
   .tasks {
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 }
