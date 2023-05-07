@@ -74,6 +74,7 @@ textarea {
   align-items: center;
   background-color: var(--light-grey);
   width: 100%;
+  overflow: hidden;
 }
 
 .tasks li {
@@ -233,7 +234,6 @@ textarea {
   cursor: pointer;
   position: relative;
   transition: all 0.8s ease;
-  overflow: hidden;
 }
 
 .clear-btn {
