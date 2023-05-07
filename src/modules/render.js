@@ -124,9 +124,14 @@ const render = () => {
   clearBtn.setAttribute('id', 'clear-all');
   clearBtn.textContent = 'Clear completed tasks';
   const lastListItem = document.createElement('li');
+  lastListItem.classList.remove('ripple');
   clearBtn.addEventListener('click', () => {
-    clearCompletedTasks(tasks);
-    render(tasks);
+    lastListItem.classList.add('ripple');
+    clearBtn.innerHTML = 'Done &#10003;';
+    setTimeout(() => {
+      clearCompletedTasks(tasks);
+      render(tasks);
+    }, 360);
   });
   lastListItem.classList.add('clear-btn-container');
   lastListItem.appendChild(clearBtn);

@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
 
+/* COLORS */
+
+:root {
+  --white: #fff;
+  --blue: #3498db;
+  --light-grey: #f2f2f2;
+  --medium-grey: #bdbdbd;
+  --dark-blue-grey: #4a6572;
+}
+
 /* RESET */
 
 *,
@@ -27,15 +37,20 @@ body {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #f1f2f5;
+  background: linear-gradient(to bottom, #d7d2cc, #304352);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #777;
+  color: var(--dark-blue-grey);
 }
 
 p {
   visibility: hidden;
+}
+
+input,
+textarea {
+  background-color: var(--light-grey);
 }
 
 /* LIST */
@@ -46,7 +61,7 @@ p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   margin: 0 5%;
   top: 0;
@@ -57,8 +72,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
-  color: #444;
+  background-color: var(--light-grey);
   width: 100%;
 }
 
@@ -67,7 +81,7 @@ p {
   display: flex;
   width: 100%;
   padding: 1rem 0 1rem 1rem;
-  border-top: 1px solid #f1f2f5;
+  border-top: 1px solid var(--medium-grey);
 }
 
 .tasks li:nth-child(2),
@@ -98,7 +112,7 @@ p {
   width: 20px;
   height: auto;
   opacity: 0.7;
-  background: #fff url('icon-refresh.png') no-repeat center;
+  background: var(--light-grey) url('icon-refresh.png') no-repeat center;
   background-size: contain;
   transition: transform 2s;
 }
@@ -130,11 +144,18 @@ p {
 
 .icon-return {
   outline: none;
+  cursor: pointer;
   border: none;
   display: inline-block;
-  width: 20px;
+  width: 30px;
+  transform: scale(0.5) scaleY(-1);
+  opacity: 0.7;
   height: auto;
-  background: #fff url('icon-return.png') no-repeat bottom;
+  background: var(--light-grey) url('icon-return.png') no-repeat bottom;
+}
+
+.icon-return:hover {
+  opacity: 1;
 }
 
 /* CHECKBOX */
@@ -153,13 +174,13 @@ input[type="checkbox"]:checked::after {
   content: "\2713";
   font-size: 20px;
   font-weight: bold;
-  color: #2e8ae6;
-  background-color: #fff;
+  color: var(--blue);
+  background-color: var(--light-grey);
 }
 
 li input[type=checkbox]:checked + span {
   text-decoration: line-through;
-  color: #888;
+  color: var(--light-grey);
 }
 
 /* DESCRIPTION TEXT */
@@ -173,7 +194,7 @@ textarea {
 
 .completed {
   text-decoration: line-through;
-  color: #999;
+  color: var(--dark-blue-grey);
 }
 
 /* REMOVE BUTTON */
@@ -184,7 +205,7 @@ textarea {
   display: flex;
   width: 20px;
   height: auto;
-  background: #fff url('icon-trash.svg') no-repeat center;
+  background: var(--light-grey) url('icon-trash.svg') no-repeat center;
   background-size: contain;
   cursor: pointer;
   transition: all 200ms ease-in-out;
@@ -208,22 +229,51 @@ textarea {
 /* CLEAR BUTTON */
 
 .clear-btn-container {
-  background-color: #f1f2f5;
+  background: var(--dark-blue-grey);
   cursor: pointer;
+  position: relative;
+  transition: all 0.8s ease;
 }
 
 .clear-btn {
   width: 100%;
   cursor: pointer;
-  background-color: #f1f2f5;
+  background-color: inherit;
+  color: var(--white);
   outline: none;
+  height: auto;
   border: none;
-  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.clear-btn-container.ripple::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+  animation: right-left 400ms linear;
+}
+
+@keyframes right-left {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -100%;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .container {
     width: 500px;
     margin: 0 auto;
+  }
+
+  .tasks {
+    overflow-y: auto;
   }
 }
