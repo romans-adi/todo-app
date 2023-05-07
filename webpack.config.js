@@ -3,6 +3,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -19,6 +21,14 @@ const config = {
     new HtmlWebpackPlugin({
       title: 'Output Management',
       template: './src/index.html',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: './src/favicon/apple-touch-icon.png', to: './favicon/apple-touch-icon.png' },
+        { from: './src/favicon/favicon-32x32.png', to: './favicon/favicon-32x32.png' },
+        { from: './src/favicon/favicon-16x16.png', to: './favicon/favicon-16x16.png' },
+        { from: './src/favicon/site.webmanifest', to: './favicon/site.webmanifest' },
+      ],
     }),
   ],
 
