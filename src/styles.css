@@ -273,8 +273,4 @@ textarea {
     width: 500px;
     margin: 0 auto;
   }
-
-  .tasks {
-    overflow-y: hidden;
-  }
 }
