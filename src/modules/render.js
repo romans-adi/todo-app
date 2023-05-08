@@ -37,6 +37,7 @@ const render = () => {
         addTask(inputField.value.trim());
         inputField.value = '';
         render();
+        inputField.focus();
       }
     }
   });
