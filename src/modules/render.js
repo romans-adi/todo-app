@@ -33,11 +33,11 @@ const render = () => {
   inputField.placeholder = 'Add to your list';
   inputField.addEventListener('keydown', (event) => {
     if (event.key === 'Enter' && inputField.value.trim() !== '') {
-      inputField.focus();
       if (inputField.value !== '') {
         addTask(inputField.value.trim());
         inputField.value = '';
         render();
+        inputField.focus();
       }
     }
   });

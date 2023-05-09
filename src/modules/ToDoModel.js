@@ -9,6 +9,7 @@ class TodoList {
     this.listContainer = listContainer;
     this.tasks = getTasks();
     this.render = render();
+    this.inputField = document.querySelector('.add-task');
   }
 
   add(description) {
