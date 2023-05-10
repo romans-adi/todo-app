@@ -1,6 +1,6 @@
-const addTask = () => '../add.js';
-const render = () => '../render.js';
-let getTasks = () => '../storage.js';
+const addTask = () => '../modules/add';
+const render = () => '../modules/render';
+let getTasks = () => '../modules/storage';
 let setTasks = () => '../storage.js'
 
 getTasks = jest.fn();
