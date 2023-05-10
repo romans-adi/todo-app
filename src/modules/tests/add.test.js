@@ -2,7 +2,8 @@ const addTask = () => '../modules/add';
 const render = () => '../modules/render';
 let getTasks = () => '../modules/storage';
 let setTasks = () => '../storage.js'
-
+const { default : TodoList } = require('../ToDoModel');
+const { default : addTask } = require('../add');
 getTasks = jest.fn();
 
 jest.mock('../modules/storage.js', () => ({
