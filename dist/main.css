@@ -74,6 +74,7 @@ textarea {
   background-color: var(--light-grey);
   width: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .tasks li {

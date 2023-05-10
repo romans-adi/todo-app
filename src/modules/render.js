@@ -29,36 +29,45 @@ const render = () => {
 
   const inputField = document.createElement('input');
   inputField.classList.add('add-task');
+  inputField.id = 'add-task';
   inputField.type = 'text';
   inputField.placeholder = 'Add to your list';
-  inputField.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter' && inputField.value.trim() !== '') {
-      if (inputField.value !== '') {
-        addTask(inputField.value.trim());
-        inputField.value = '';
-        render();
-        inputField.focus();
-      }
-    }
-  });
 
   // Return icon (add task button)
 
   const addBtn = document.createElement('input');
   addBtn.classList.add('icon-return');
   addBtn.type = 'submit';
-  addBtn.setAttribute('value', '');
-  addBtn.setAttribute('id', 'submit-new-item');
-  addBtn.setAttribute('title', 'click this or press enter to submit');
+  addBtn.value = '';
+  addBtn.id = 'submit-new-item';
+  addBtn.title = 'click this or press enter to submit';
+
+  // Add input field and button to list container
+
   const addListInput = document.createElement('li');
   addListInput.appendChild(inputField);
   addListInput.appendChild(addBtn);
   listContainer.appendChild(addListInput);
-  addBtn.addEventListener('click', () => {
-    if (inputField.value !== '') {
+
+  // Submit new task
+
+  const submitNewTask = () => {
+    if (inputField.value.trim() !== '') {
       addTask(inputField.value.trim());
-      render(tasks);
+      render();
+      inputField.value = '';
+      document.getElementById('add-task').focus();
     }
+  };
+
+  inputField.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      submitNewTask();
+    }
+  });
+
+  addBtn.addEventListener('click', () => {
+    submitNewTask();
   });
 
   // Creating li element
@@ -98,6 +107,8 @@ const render = () => {
     });
     description.addEventListener('input', (event) => {
       task.description = event.target.value;
+      description.style.height = 'auto';
+      description.style.height = `${description.scrollHeight}px`;
     });
     description.addEventListener('keydown', (event) => {
       if (event.key === 'Enter') {
