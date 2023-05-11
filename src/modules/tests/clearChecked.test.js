@@ -1,8 +1,8 @@
 import clearCompletedTasks from "../clearChecked.js";
 import changeDescription from "../changeDescription.js";
 import addTask from "../add.js";
+import checkboxToggle from "../checkboxToggle.js";
 import { getTasks, setTasks } from "../storage.js";
-import expect from "expect";
 
 
 jest.mock('../storage', () => {
@@ -50,4 +50,31 @@ describe("changeDescription", () => {
   expect(getTasks()[0].description).toBe("Test task 2");
   
   })
+});
+
+describe('checkbocToggle', () => {
+  const render = jest.fn();
+  beforeEach(() => {
+    setTasks([]);
+  });
+  it('completed value is changing', () => {
+    setTasks([{ description: 'Task 1', completed: true, index: 1 }, { description: 'Task 2', completed: false, index: 2 }]);
+    document.body.innerHTML = `
+    <ul id="task-list">
+    </ul>
+    `;
+    const container = document.getElementById('task-list');
+    const addListInput = document.createElement('li');
+    console.log(getTasks());
+    const checkbox = checkboxToggle(getTasks()[0], getTasks(), render);
+    const checkbox2 = checkboxToggle(getTasks()[1], getTasks(), render);
+    addListInput.appendChild(checkbox);
+    addListInput.appendChild(checkbox2);
+    container.appendChild(addListInput);
+    checkbox.click();
+    expect(getTasks()[0].completed).toBe(false);
+    checkbox2.click();
+    expect(getTasks()[1].completed).toBe(true);
+    
+  });
 });
