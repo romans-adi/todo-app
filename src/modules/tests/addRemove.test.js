@@ -1,5 +1,22 @@
+import addTask from '../add';
 import removeTask from '../remove';
 import { setTasks, getTasks } from '../storage';
+
+describe('addTask', () => {
+  beforeEach(() => {
+    setTasks([]);
+  });
+  it('should add a task to the tasks array', () => {
+    const description = 'Test task';
+    addTask(description);
+    const tasks = getTasks();
+
+    expect(tasks).toHaveLength(1);
+    expect(tasks[0].description).toBe(description);
+    expect(tasks[0].completed).toBeFalsy();
+    expect(tasks[0].index).toBe(1);
+  });
+});
 
 describe('removeTask', () => {
   beforeEach(() => {
