@@ -1,3 +1,5 @@
+import '../css/styles.css'
+
 // BURGER
 
 const topNav = document.querySelector('.top-navigation');
