@@ -8,8 +8,8 @@ jest.mock('../storage', () => {
     setTasks: (newTasks) => {
       tasks = newTasks;
     },
-    getTasks: () => { return tasks; }
-  }
+    getTasks: () => tasks,
+  };
 });
 
 describe('addTask', () => {
