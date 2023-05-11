@@ -11,20 +11,13 @@ jest.mock('../storage', () => {
   };
 });
 
-
 describe("clearCompletedTasks", () => {
   it("should remove completed tasks from storage and update their indices", () => {
-    const tasks = [
-      { description: "Task 1", completed: true },
-      { description: "Task 2", completed: false },
-      { description: "Task 3", completed: true },
-    ];
-    getTasks.mockReturnValue(tasks);
+    setTasks([{ description: 'Task 1', completed: true, index: 1 }, { description: 'Task 2', completed: false, index: 2 }]);
+    expect(getTasks()).toHaveLength(2);
     clearCompletedTasks();
-    expect(getTasks).toHaveBeenCalledTimes(1);
-    expect(setTasks).toHaveBeenCalledTimes(1);
-    expect(setTasks).toHaveBeenCalledWith([
-      { description: "Task 2", completed: false, index: 1 },
-    ]);
+    expect(getTasks()).toHaveLength(1);
+    expect(getTasks()).toBe([
+    { description: "Task 2", completed: false, index: 1 }]);
   });
 });
