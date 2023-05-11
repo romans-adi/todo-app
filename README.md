@@ -26,7 +26,7 @@
 
 # 📖 <a name="about-project">To Do List</a>
 
-Simple To Do List single-page application (SPA) that allows user to add and/or remove tasks to/from the list. Only one class with defined methods used. All data stored in local storage. Project is based on modular JS and ES6 syntax & features.
+This project is a single-page application (SPA) for a Simple To-Do List, where users can add and remove tasks to/from the list. The application is built using modular JavaScript and ES6 syntax and features. It consists of only one class with defined methods and all data is stored in local storage.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -49,6 +49,7 @@ Simple To Do List single-page application (SPA) that allows user to add and/or r
   <li>Data is preserved in the browser's memory by using local storage</li>
   <li>Modular JavaScript</li>
   <li>Built with a Webpack bundler</li>
+  <li>Tested with Jest Javascript Testing Framework</li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -100,6 +101,10 @@ To run the project, execute the following command:
 
 > npm start
 
+To run tests, execute the following command:
+
+> npm test
+
 ### Deployment
 
 This page is deployed using GitHub Pages:
@@ -133,6 +138,12 @@ This page is deployed using GitHub Pages:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
+👤 **Gerson Higgins**
+
+Significant contribution during the testing phase.
+
+- GitHub: [@gersonhiggins](https://github.com/gersonhiggins/)
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
@@ -143,8 +154,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-To show your support, you can star this project. I would also appreciate any commentaries.
-Additionally, you can contact me reaching me by any link mentioned in the section <a href="#authors">Authors</a>.
+If you would like to express your support, you can give this project a star. Your feedback is also greatly appreciated, so feel free to leave any comments you may have. Furthermore, if you would like to get in touch with me, you can find my contact information in the <a href="#authors">Authors</a> section.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,7 +162,7 @@ Additionally, you can contact me reaching me by any link mentioned in the sectio
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my coding school Microverse for sharing useful information and having an opportunity to practice in this topic.
+I would like to express my gratitude to Microverse, my coding school, for providing me with valuable resources and the opportunity to hone my skills in this field.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

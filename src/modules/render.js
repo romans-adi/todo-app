@@ -3,6 +3,7 @@ import addTask from './add.js';
 import removeTask from './remove.js';
 import clearCompletedTasks from './clearChecked.js';
 import checkboxToggle from './checkboxToggle.js';
+import changeDescription from './changeDescription.js';
 
 const render = () => {
   const tasks = getTasks();
@@ -113,7 +114,7 @@ const render = () => {
     description.addEventListener('keydown', (event) => {
       if (event.key === 'Enter') {
         event.preventDefault();
-        task.description = description.value;
+        changeDescription(task, description);
         setTasks(tasks);
         render(tasks);
       }
