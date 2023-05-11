@@ -2,6 +2,18 @@ import addTask from '../add';
 import removeTask from '../remove';
 import { setTasks, getTasks } from '../storage';
 
+jest.mock('../storage', () => {
+  let tasks = [];
+  return {
+    setTasks: (newTasks) => {
+      tasks = newTasks;
+    },
+    getTasks: () => {
+      return tasks;
+    }
+  }
+});
+
 describe('addTask', () => {
   beforeEach(() => {
     setTasks([]);
