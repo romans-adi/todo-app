@@ -3,7 +3,7 @@ import addTask from './add.js';
 import removeTask from './remove.js';
 import clearCompletedTasks from './clearChecked.js';
 import checkboxToggle from './checkboxToggle.js';
-import changeDescription from './changeDescription.js'
+import changeDescription from './changeDescription.js';
 
 const render = () => {
   const tasks = getTasks();

@@ -1,5 +1,5 @@
 const changeDescription = (task, description) => {
-          task.description = description.value;
-}
+  task.description = description.value;
+};
 
 export default changeDescription;
