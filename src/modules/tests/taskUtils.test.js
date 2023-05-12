@@ -50,7 +50,7 @@ describe('changeDescription', () => {
   });
 });
 
-describe('checkbocToggle', () => {
+describe('checkboxToggle', () => {
   const render = jest.fn();
   beforeEach(() => {
     setTasks([]);
