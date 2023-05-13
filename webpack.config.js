@@ -18,7 +18,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: './src/assets/img', to: './img' },
+        { from: './src/assets/img', to: './assets/img' },
       ],
     }),
     isProduction && new MiniCssExtractPlugin(),
