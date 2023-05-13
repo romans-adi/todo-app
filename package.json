@@ -1,7 +1,7 @@
 {
-  "name": "my-webpack-project",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "Roman's Portfolio is a project that showcases his skills and tools used in previous works, providing information about his experience and expertise.",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
