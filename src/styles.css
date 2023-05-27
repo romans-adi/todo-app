@@ -114,7 +114,7 @@ textarea {
   width: 20px;
   height: auto;
   opacity: 0.7;
-  background: var(--light-grey) url('icon-refresh.png') no-repeat center;
+  background: var(--light-grey) url('./img/icons/icon-refresh.png') no-repeat center;
   background-size: contain;
   transition: transform 2s;
 }
@@ -153,7 +153,7 @@ textarea {
   transform: scale(0.5) scaleY(-1);
   opacity: 0.7;
   height: auto;
-  background: var(--light-grey) url('icon-return.png') no-repeat bottom;
+  background: var(--light-grey) url('./img/icons/icon-return.png') no-repeat bottom;
 }
 
 .icon-return:hover {
@@ -207,7 +207,7 @@ textarea {
   display: flex;
   width: 20px;
   height: auto;
-  background: var(--light-grey) url('icon-trash.svg') no-repeat center;
+  background: var(--light-grey) url('./img/icons/icon-trash.svg') no-repeat center;
   background-size: contain;
   cursor: pointer;
   transition: all 200ms ease-in-out;
@@ -224,7 +224,7 @@ textarea {
   width: 20px;
   height: 25px;
   margin-right: 10px;
-  background-image: url('more-vertical.svg');
+  background-image: url('./img/icons/more-vertical.svg');
   background-repeat: no-repeat;
 }
 

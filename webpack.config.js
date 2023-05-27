@@ -18,7 +18,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: './src/favicon', to: './favicon' },
+        { from: './src/img/', to: './src/img/' },
       ],
     }),
     isProduction && new MiniCssExtractPlugin(),
